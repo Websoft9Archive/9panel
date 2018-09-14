@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <!-- Required meta tags-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="这是一个Websoft9镜像面板页面，辅助客户安装和维护镜像">
+    <meta name="keywords" content="index">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Hau Nguyen">
+
+    <!-- Title Page-->
+    <title>Websoft9运维面板-9Panel</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+
+    <!-- Websoft9 JS-->
+    <script src="js/websoft9.js"></script>
+
+</head>
+
+<body class="animsition" onload="DisplayIndexPage()">
+    <div class="page-wrapper">
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/icon/websoft9-imagepanel.png" alt="Cool Admin" />
+                </a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar" id="leftmenu">
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <script src="js/header-desktop.js"></script>
+            <!-- HEADER DESKTOP-->
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                   <!-- 镜像说明-->
+                        <div class="jumbotron">
+                                <h1 class="display-4">Hello, 欢迎使用Websoft9提供的镜像!</h1>
+                                <p class="lead" id="displaywelcome">您安装的是LAMP基础环境镜像，包含：Linux，Apache，PHP，MySQL。请参考下面的步骤，完成</p>  
+                        </div>
+                   <!-- End 镜像说明-->
+                    <div class="container-fluid">
+
+                         <!-- 快速安装-->
+                         <div class="row">
+                            <div class="col-md-12">
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">快速使用：</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-t-25" id="stackinstallation">
+
+                        </div>
+
+                        <!-- End 快速安装-->
+
+
+                        <!-- 远程连接与FTP-->
+                        <div class="row">
+                                <div class="col-md-12">
+                                    <div class="overview-wrap">
+                                        <h2 class="title-1">您可能感兴趣：</h2>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="row m-t-25">
+                            <div class="col-lg-6">
+                                <div class="au-card recent-report">
+                                    <div id="accordion">
+                                        
+                                        <div class="card">
+                                          <div class="card-header" id="headingTwo">
+                                            <h5 class="mb-0">
+                                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                9Panel是什么？能改名或删除吗？
+                                              </button>
+                                            </h5>
+                                          </div>
+                                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                            <div class="card-body">
+                                            9Panel是快捷面板工具，集成数据库管理工具、系统运维工具、文档和支持服务入口，重点在于连接知识库和服务，几乎不会占用系统资源，也不会对系统文件进行任何修改。<br>
+                                            -如果对9Panel文件夹进行改名或删除，需要修改9Panel对应配置的文件，否则系统会报错。(修改配置文件对普通用户来说有难度)<br>
+                                            -如果想隐藏9Panel的默认页面，建议将index.html改名；<br>
+                                            -如果不需要9Panel，请删除9Panel下所有内容，保留空的9Panel文件夹即可
+                                            </div>
+                                          </div>
+                                        </div>
+                                        
+                                        <div class="card">
+                                          <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0">
+                                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                本镜像能够安装多个网站或应用吗？
+                                              </button>
+                                            </h5>
+                                          </div>
+                                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                            <div class="card-body">
+                                                可以安装多个网站或应用，具体请参考镜像手册                                       
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div> 
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="au-card recent-report">
+                                    <div id="accordion">
+                                        
+                                        <div class="card">
+                                          <div class="card-header" id="headingFour">
+                                            <h5 class="mb-0">
+                                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                               为什么要修改数据库密码？
+                                              </button>
+                                            </h5>
+                                          </div>
+                                          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                            <div class="card-body">
+                                            默认的数据库密码比较简单，为了安全和便于记忆，请务必改成您自己的强安全密码
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card">
+                                          <div class="card-header" id="headingFive">
+                                            <h5 class="mb-0">
+                                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                没有域名可以安装网站吗？
+                                              </button>
+                                            </h5>
+                                          </div>
+                                          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                            <div class="card-body">
+                                            如果没有可用域名，可用IP的方式安装网站。但有些软件（例如：WordPress）会将安装路径记录到数据库，将来改成域名访问需要做出修改方可使用                                 
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End 远程连接与FTP-->
+                        
+                        <!-- 版权区-->
+                        <script src="js/copyright.js"></script>
+                        <!-- End 版权区-->
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+            <!-- END PAGE CONTAINER-->
+        </div>
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
