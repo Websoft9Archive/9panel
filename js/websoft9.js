@@ -102,7 +102,7 @@ var stepsdisplay=
 {
     "steptype":"apps",
     "steps":[
-        {"stepname":"第一步：修改数据库密码","stepcontent":"为了保障您的数据安全，请在进入安装向导之前修改【数据库管理员】密码","steplinkname":"管理数据库","steplink":"db.html","stepimage":"images/phpmyadmin.png"},
+        {"stepname":"第一步：修改数据库密码","stepcontent":"为了保障您的数据安全，请在进入安装向导之前<a href='db.html'>修改【数据库管理员】密码</a>","steplinkname":"管理数据库","steplink":"db.html","stepimage":"images/phpmyadmin.png"},
         {"stepname":"第二步：域名解析（可选）","stepcontent":"若计划使用域名，请务必先解析域名，然后【通过域名访问的方式进入安装向导】","steplinkname":"马上","steplink":null,"stepimage":"images/domain.png"},
         {"stepname":"第三步：进入安装向导","stepcontent":"安装向导典型流程：检查环境->连接数据库->设置后台账号->进入后台","steplinkname":"进入安装向导","steplink":null,"stepimage":"images/install003.png"}
     ],
