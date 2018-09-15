@@ -12,12 +12,12 @@
  [
     {
     "name":"LAMP",
-    "switch":1,
+    "switch":0,
     "apps":[
-        {"appname":"WordPress","switch":1,"apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"},
+        {"appname":"WordPress","switch":0,"apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"},
         {"appname":"Joomla","switch":0,"apphelpurl":"http://support.websoft9.com/docs/joomla-image-guide","installdr":"/"},
         {"appname":"Drupal","switch":0,"apphelpurl":"http://support.websoft9.com/docs/drupal-image-guide","installdr":"/"},
-        {"appname":"Discuz","switch":1,"apphelpurl":"http://support.websoft9.com/docs/discuz-image-guide","installdr":"/discuz"},
+        {"appname":"Discuz","switch":0,"apphelpurl":"http://support.websoft9.com/docs/discuz-image-guide","installdr":"/discuz"},
     ],
     "language":["PHP"],
     "os":"Linux",
@@ -43,6 +43,83 @@
     "httpserver":["Nginx"],
     "tools":["php-fork","php-info","php-opcache"],
     "helpurl":"http://support.websoft9.com/docs/lnmp-image-guide"
+},
+
+{
+    "name":"LCMP",
+    "switch":1,
+    "apps":[
+        {"appname":"WordPress","switch":0,"apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"},
+        {"appname":"Joomla","switch":0,"apphelpurl":"http://support.websoft9.com/docs/joomla-image-guide","installdr":"/"},
+        {"appname":"Drupal","switch":0,"apphelpurl":"http://support.websoft9.com/docs/drupal-image-guide","installdr":"/"},
+    ],
+    "language":["PHP"],
+    "os":"Linux",
+    "database":["MySQL","MariaDB"],
+    "databasetool":["phpMyAdmin"],
+    "httpserver":["Caddy"],
+    "tools":["php-fork","php-info","php-opcache"],
+    "helpurl":"http://support.websoft9.com/docs/lcmp-image-guide"
+},
+
+{
+    "name":"LNMT",
+    "switch":0,
+    "apps":[
+        {"appname":"WordPress","switch":0,"apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"}
+    ],
+    "language":["PHP","Java"],
+    "os":"Linux",
+    "database":["MySQL","MariaDB"],
+    "databasetool":["phpMyAdmin"],
+    "httpserver":["Nginx","Tomcat"],
+    "tools":["php-fork","php-info","php-opcache"],
+    "helpurl":"http://support.websoft9.com/docs/lnmt-image-guide"
+},
+
+{
+    "name":"LANMP",
+    "switch":0,
+    "apps":[
+        {"appname":"WordPress","switch":0,"apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"}
+    ],
+    "language":["PHP"],
+    "os":"Linux",
+    "database":["MySQL","MariaDB"],
+    "databasetool":["phpMyAdmin"],
+    "httpserver":["Nginx","Apache"],
+    "tools":["php-fork","php-info","php-opcache"],
+    "helpurl":"http://support.websoft9.com/docs/lanmp-image-guide/"
+},
+
+{
+    "name":"Java on Tomcat",
+    "switch":0,
+    "apps":[
+        {"appname":"WordPress","switch":0,"apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"}
+    ],
+    "language":["Java"],
+    "os":"Linux",
+    "database":["MySQL","MariaDB"],
+    "databasetool":["phpMyAdmin"],
+    "httpserver":["Nginx","Tomcat"],
+    "tools":["php-fork","php-info","php-opcache"],
+    "helpurl":"http://support.websoft9.com/docs/java-tomcat-image-guide/"
+},
+
+{
+    "name":"Java on Tomcat",
+    "switch":0,
+    "apps":[
+        {"appname":"WordPress","switch":0,"apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"}
+    ],
+    "language":["Java"],
+    "os":"Linux",
+    "database":["MySQL","MariaDB"],
+    "databasetool":["phpMyAdmin"],
+    "httpserver":["Nginx","Tomcat"],
+    "tools":["php-fork","php-info","php-opcache"],
+    "helpurl":"http://support.websoft9.com/docs/java-tomcat-image-guide/"
 },
 
 {
@@ -92,6 +169,21 @@
     "httpserver":["Apache","Tomcat"],
     "tools":["php-fork","php-info","php-opcache"],
     "helpurl":"http://support.websoft9.com/docs/xampp-image-guide"
+},
+
+{
+    "name":"IIS全能",
+    "switch":0,
+    "apps":[
+        {"appname":"WordPress","switch":0,"apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"},
+    ],
+    "language":["PHP",".NET","Java"],
+    "os":"Windows",
+    "database":["MySQL","SQLServer Express"],
+    "databasetool":["phpMyAdmin","SQL Server Managerment Studio"],
+    "httpserver":["IIS","Tomcat"],
+    "tools":["php-fork","php-info","php-opcache"],
+    "helpurl":"http://support.websoft9.com/docs/windows-iis-image-guide/"
 },
  
 ];
