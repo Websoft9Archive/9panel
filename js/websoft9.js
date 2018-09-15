@@ -298,21 +298,26 @@ function DisplayOtherToolsPage()
             
         }
     }
+
+    //var menunow="active";
+   // var thisurl=location.pathname;
+//
+
     
     var leftmenu=" <ul class=\'list-unstyled navbar__list\'>"+
-    "                            <li>"+
+    "                             <li class=\'"+menunow('index.html')+"\'>"+
     "                                <a href=\'index.html\'>"+
     "                                <i class=\'fas fa-tachometer-alt\'></i>安装说明</a>"+
     "                            </li>"+
-    "                            <li>"+
+    "                             <li class=\'"+menunow('db.html')+"\'>"+
     "                                <a href=\'db.html\'>"+
     "                                <i class=\'fas fa-database\'></i>数据库管理</a>"+
     "                            </li>"+
-    "                            <li>"+
+    "                             <li class=\'"+menunow('ftp.html')+"\'>"+
     "                                <a href=\'ftp.html\'>"+
     "                                <i class=\'fas fa-folder-open\'></i>远程连接与FTP</a>"+
     "                            </li>"+
-    "                            <li>"+
+    "                            <li class=\'"+menunow('tools.html')+"\'>"+
     "                                <a href=\'tools.html\'>"+
     "                                <i class=\'fas fa-gavel\'></i>工具</a>"+
     "                            </li>"+
@@ -327,6 +332,17 @@ function DisplayOtherToolsPage()
     "                        </ul>";
     document.getElementById("leftmenu").innerHTML=leftmenu;
  }
+
+ //让菜单中当前页面为蓝色
+ function menunow(nowhtml)
+ {     
+   var thisurl=location.pathname;
+   if (thisurl.match(nowhtml)!=null)
+   {
+    return "active" ;
+   }
+ }
+
 
  //显示数据库管理工具，数据库管理工具相关定义项在此描述。
  function DisplayDatabaseTools(toolname)
