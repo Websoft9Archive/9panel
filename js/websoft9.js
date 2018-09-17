@@ -47,7 +47,7 @@
 
 {
     "name":"LCMP",
-    "switch":1,
+    "switch":0,
     "apps":[
         {"appname":"WordPress","switch":0,"apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"},
         {"appname":"Joomla","switch":0,"apphelpurl":"http://support.websoft9.com/docs/joomla-image-guide","installdr":"/"},
