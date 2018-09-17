@@ -8,17 +8,20 @@
 //database,databasetool等采用数组类型，满足多数据库镜像的显示
 //如果镜像没有运维工具，语法为："tools":[],
 //如果是apps是组合类镜像（例如：WordPress&Discuz），务必将installdr更改为组合类对应安装路径
+
+var appslist=[
+    {"appname":"WordPress","switch":0,"apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"},
+    {"appname":"Joomla","switch":0,"apphelpurl":"http://support.websoft9.com/docs/joomla-image-guide","installdr":"/"},
+    {"appname":"Drupal","switch":0,"apphelpurl":"http://support.websoft9.com/docs/drupal-image-guide","installdr":"/"},
+    {"appname":"Discuz","switch":0,"apphelpurl":"http://support.websoft9.com/docs/discuz-image-guide","installdr":"/discuz"},
+];
+
+
  var websoft9stack=
  [
     {
-    "name":"LAMP",
-    "switch":0,
-    "apps":[
-        {"appname":"WordPress","switch":0,"apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"},
-        {"appname":"Joomla","switch":0,"apphelpurl":"http://support.websoft9.com/docs/joomla-image-guide","installdr":"/"},
-        {"appname":"Drupal","switch":0,"apphelpurl":"http://support.websoft9.com/docs/drupal-image-guide","installdr":"/"},
-        {"appname":"Discuz","switch":0,"apphelpurl":"http://support.websoft9.com/docs/discuz-image-guide","installdr":"/discuz"},
-    ],
+    "name":"LAMP","switch":0,
+    "apps":appslist,
     "language":["PHP"],
     "os":"Linux",
     "database":["MySQL"],
@@ -29,13 +32,8 @@
 },
 
 {
-    "name":"LNMP",
-    "switch":0,
-    "apps":[
-        {"appname":"WordPress","switch":0,"apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"},
-        {"appname":"Joomla","switch":0,"apphelpurl":"http://support.websoft9.com/docs/joomla-image-guide","installdr":"/"},
-        {"appname":"Drupal","switch":0,"apphelpurl":"http://support.websoft9.com/docs/drupal-image-guide","installdr":"/"},
-    ],
+    "name":"LNMP","switch":0,
+    "apps":appslist,
     "language":["PHP"],
     "os":"Linux",
     "database":["MySQL","MariaDB"],
@@ -46,13 +44,8 @@
 },
 
 {
-    "name":"LCMP",
-    "switch":0,
-    "apps":[
-        {"appname":"WordPress","switch":0,"apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"},
-        {"appname":"Joomla","switch":0,"apphelpurl":"http://support.websoft9.com/docs/joomla-image-guide","installdr":"/"},
-        {"appname":"Drupal","switch":0,"apphelpurl":"http://support.websoft9.com/docs/drupal-image-guide","installdr":"/"},
-    ],
+    "name":"LCMP","switch":0,
+    "apps":appslist,
     "language":["PHP"],
     "os":"Linux",
     "database":["MySQL","MariaDB"],
@@ -63,11 +56,8 @@
 },
 
 {
-    "name":"LNMT",
-    "switch":0,
-    "apps":[
-        {"appname":"WordPress","switch":0,"apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"}
-    ],
+    "name":"LNMT","switch":0,
+    "apps":appslist,
     "language":["PHP","Java"],
     "os":"Linux",
     "database":["MySQL","MariaDB"],
@@ -78,11 +68,8 @@
 },
 
 {
-    "name":"LANMP",
-    "switch":0,
-    "apps":[
-        {"appname":"WordPress","switch":0,"apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"}
-    ],
+    "name":"LANMP","switch":0,
+    "apps":appslist,
     "language":["PHP"],
     "os":"Linux",
     "database":["MySQL","MariaDB"],
@@ -93,11 +80,8 @@
 },
 
 {
-    "name":"Java on Tomcat",
-    "switch":0,
-    "apps":[
-        {"appname":"WordPress","switch":0,"apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"}
-    ],
+    "name":"Java on Tomcat","switch":0,
+    "apps":appslist,
     "language":["Java"],
     "os":"Linux",
     "database":["MySQL","MariaDB"],
@@ -108,11 +92,8 @@
 },
 
 {
-    "name":"Java on Tomcat",
-    "switch":0,
-    "apps":[
-        {"appname":"WordPress","switch":0,"apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"}
-    ],
+    "name":"Java on Tomcat","switch":0,
+    "apps":appslist,
     "language":["Java"],
     "os":"Linux",
     "database":["MySQL","MariaDB"],
@@ -123,13 +104,8 @@
 },
 
 {
-    "name":"WAMP",
-    "switch":0,
-    "apps":[
-        {"appname":"WordPress","switch":0,"apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"},
-        {"appname":"Joomla","switch":0,"apphelpurl":"http://support.websoft9.com/docs/joomla-image-guide","installdr":"/"},
-        {"appname":"Drupal","switch":0,"apphelpurl":"http://support.websoft9.com/docs/drupal-image-guide","installdr":"/"},
-    ],
+    "name":"WAMP","switch":0,
+    "apps":appslist,
     "language":["PHP"],
     "os":"Windows",
     "database":["MySQL"],
@@ -140,13 +116,8 @@
 },
 
 {
-    "name":"WAMPServer",
-    "switch":0,
-    "apps":[
-        {"appname":"WordPress","switch":0,"apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"},
-        {"appname":"Joomla","switch":0,"apphelpurl":"http://support.websoft9.com/docs/joomla-image-guide","installdr":"/"},
-        {"appname":"Drupal","switch":0,"apphelpurl":"http://support.websoft9.com/docs/drupal-image-guide","installdr":"/"},
-    ],
+    "name":"WAMPServer","switch":0,
+    "apps":appslist,
     "language":["PHP"],
     "os":"Windows",
     "database":["MySQL"],
@@ -157,11 +128,8 @@
 },
 
 {
-    "name":"XAMPP",
-    "switch":0,
-    "apps":[
-        {"appname":"WordPress","switch":0,"apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"},
-    ],
+    "name":"XAMPP","switch":0,
+    "apps":appslist,
     "language":["PHP","JAVA"],
     "os":"Windows",
     "database":["MySQL"],
@@ -172,11 +140,8 @@
 },
 
 {
-    "name":"IIS全能",
-    "switch":0,
-    "apps":[
-        {"appname":"WordPress","switch":0,"apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"},
-    ],
+    "name":"IIS全能","switch":0,
+    "apps":appslist,
     "language":["PHP",".NET","Java"],
     "os":"Windows",
     "database":["MySQL","SQLServer Express"],
