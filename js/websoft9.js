@@ -36,7 +36,7 @@ var appslist=[
     "apps":appslist,
     "language":["PHP"],
     "os":"Linux",
-    "database":["MySQL","MariaDB"],
+    "database":["MySQL"],
     "databasetool":["phpMyAdmin"],
     "httpserver":["Nginx"],
     "tools":["php-fork","php-info","php-opcache"],
@@ -48,7 +48,7 @@ var appslist=[
     "apps":appslist,
     "language":["PHP"],
     "os":"Linux",
-    "database":["MySQL","MariaDB"],
+    "database":["MySQL"],
     "databasetool":["phpMyAdmin"],
     "httpserver":["Caddy"],
     "tools":["php-fork","php-info","php-opcache"],
@@ -60,7 +60,7 @@ var appslist=[
     "apps":appslist,
     "language":["PHP","Java"],
     "os":"Linux",
-    "database":["MySQL","MariaDB"],
+    "database":["MySQL"],
     "databasetool":["phpMyAdmin"],
     "httpserver":["Nginx","Tomcat"],
     "tools":["php-fork","php-info","php-opcache"],
@@ -87,7 +87,7 @@ var appslist=[
     "database":["MySQL","MariaDB"],
     "databasetool":["phpMyAdmin"],
     "httpserver":["Nginx","Tomcat"],
-    "tools":["php-fork","php-info","php-opcache"],
+    "tools":"",
     "helpurl":"http://support.websoft9.com/docs/java-tomcat-image-guide/"
 },
 
@@ -95,11 +95,11 @@ var appslist=[
     "name":"Java on Tomcat","switch":0,
     "apps":appslist,
     "language":["Java"],
-    "os":"Linux",
+    "os":"Windows",
     "database":["MySQL","MariaDB"],
     "databasetool":["phpMyAdmin"],
     "httpserver":["Nginx","Tomcat"],
-    "tools":["php-fork","php-info","php-opcache"],
+    "tools":"",
     "helpurl":"http://support.websoft9.com/docs/java-tomcat-image-guide/"
 },
 
@@ -148,6 +148,30 @@ var appslist=[
     "databasetool":["phpMyAdmin","SQL Server Managerment Studio"],
     "httpserver":["IIS","Tomcat"],
     "tools":["php-fork","php-info","php-opcache"],
+    "helpurl":"http://support.websoft9.com/docs/windows-iis-image-guide/"
+},
+
+{
+    "name":".NET","switch":0,
+    "apps":appslist,
+    "language":[".NET"],
+    "os":"Windows",
+    "database":["MySQL","SQLServer Express"],
+    "databasetool":["phpMyAdmin","SQL Server Managerment Studio"],
+    "httpserver":["IIS"],
+    "tools":"",
+    "helpurl":"http://support.websoft9.com/docs/windows-iis-image-guide/"
+},
+
+{
+    "name":"PHP ON IIS","switch":0,
+    "apps":appslist,
+    "language":["PHP",".NET"],
+    "os":"Windows",
+    "database":["MySQL","SQLServer Express"],
+    "databasetool":["phpMyAdmin","SQL Server Managerment Studio"],
+    "httpserver":["IIS"],
+    "tools":"",
     "helpurl":"http://support.websoft9.com/docs/windows-iis-image-guide/"
 },
  
