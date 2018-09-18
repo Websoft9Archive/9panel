@@ -533,7 +533,7 @@ function DisplayOtherToolsPage()
     "                                                <p class=\"lead\"> "+toolcontent+"</p>"+
     "                                              </div>"+
     "                                        <div class=\"au-task__footer\">"+
-    "                                                <a class=\"btn btn-success\" href=\"/"+toollink+"\" target=\"_blank\"  role=\"button\"> "+toollinkname+"</a>"+
+    "                                                <a class=\"btn btn-success\" href=\"/9panel/"+toollink+"\" target=\"_blank\"  role=\"button\"> "+toollinkname+"</a>"+
     "                                            </div>"+
     "                                    </div>"+
     "                                </div>"+
