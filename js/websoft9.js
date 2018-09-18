@@ -10,10 +10,14 @@
 //如果是apps是组合类镜像（例如：WordPress&Discuz），务必将installdr更改为组合类对应安装路径
 
 var appslist=[
-    {"appname":"WordPress","switch":0,"apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"},
-    {"appname":"Joomla","switch":0,"apphelpurl":"http://support.websoft9.com/docs/joomla-image-guide","installdr":"/"},
-    {"appname":"Drupal","switch":0,"apphelpurl":"http://support.websoft9.com/docs/drupal-image-guide","installdr":"/"},
-    {"appname":"Discuz","switch":0,"apphelpurl":"http://support.websoft9.com/docs/discuz-image-guide","installdr":"/discuz"},
+    {"appname":"WordPress","switch":0,
+    "apphelpurl":"http://support.websoft9.com/docs/wordpress-image-guide","installdr":"/"},
+    {"appname":"Joomla","switch":0,
+    "apphelpurl":"http://support.websoft9.com/docs/joomla-image-guide","installdr":"/"},
+    {"appname":"Drupal","switch":0,
+    "apphelpurl":"http://support.websoft9.com/docs/drupal-image-guide","installdr":"/"},
+    {"appname":"Discuz","switch":0,
+    "apphelpurl":"http://support.websoft9.com/docs/discuz-image-guide","installdr":"/discuz"},
 ];
 
 
