@@ -18,6 +18,14 @@ var appslist=[
     "apphelpurl":"http://support.websoft9.com/docs/drupal-image-guide","installdr":"/"},
     {"appname":"Discuz","switch":0,
     "apphelpurl":"http://support.websoft9.com/docs/discuz-image-guide","installdr":"/discuz"},
+    {"appname":"Kodcloud","switch":0,
+    "apphelpurl":"http://support.websoft9.com/docs/kodexplorer-image-guide","installdr":"/"},
+    {"appname":"Pydio","switch":0,
+    "apphelpurl":"http://support.websoft9.com/docs/pydio-image-guide","installdr":"/"},
+    {"appname":"OwnCloud","switch":0,
+    "apphelpurl":"http://support.websoft9.com/docs/owncloud-image-guide","installdr":"/"},
+    {"appname":"NextCloud","switch":0,
+    "apphelpurl":"http://support.websoft9.com/docs/nextcloud-image-guide","installdr":"/"},
 ];
 
 
