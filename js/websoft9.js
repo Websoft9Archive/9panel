@@ -26,6 +26,8 @@ var appslist=[
     "apphelpurl":"http://support.websoft9.com/docs/owncloud-image-guide","installdr":"/"},
     {"appname":"NextCloud","switch":0,
     "apphelpurl":"http://support.websoft9.com/docs/nextcloud-image-guide","installdr":"/"},
+    {"appname":"Moodle","switch":0,
+    "apphelpurl":"http://support.websoft9.com/docs/moodle-image-guide","installdr":"/"},
 ];
 
 
