@@ -94,7 +94,7 @@ var appslist=[
 },
 
 {
-    "name":"Java on Tomcat","switch":0,
+    "name":"Java on Tomcat","switch":1,
     "apps":appslist,
     "language":["Java"],
     "os":"Linux",
@@ -258,6 +258,22 @@ function DisplayIndexPage()
    
 }
 
+//显示示例页面
+function DisplayExamplePage()
+{
+  for(i=0;i<websoft9stack.length;i++)
+  {
+     if (websoft9stack[i].switch==1)
+     {
+        //显示示例页面名称
+        y=document.getElementById("displaywelcomeofexample");
+        y.innerHTML=websoft9stack[i].name;
+
+     }
+  }
+   
+}
+
 //显示远程与FTP页面
 function DisplayFTPPage()
 {
@@ -359,6 +375,8 @@ function DisplayOtherToolsPage()
     }
 
     welcomemesage="您安装的是"+stacknametile+"镜像，"+"主要环境组件包括："+w9stack.os+","+w9stack.httpserver+","+w9stack.language+","+w9stack.database+","+w9stack.databasetool;
+    
+    
     x=document.getElementById("displaywelcome");
     x.innerHTML=welcomemesage;
  }
