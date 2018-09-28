@@ -94,7 +94,7 @@ var appslist=[
 },
 
 {
-    "name":"Java on Tomcat","switch":1,
+    "name":"Java on Tomcat","switch":0,
     "apps":appslist,
     "language":["Java"],
     "os":"Linux",
