@@ -7,7 +7,7 @@
 //分别定义Stack的属性，switch为开关，0代表不显示，1代表显示；
 //database,databasetool等采用数组类型，满足多数据库镜像的显示
 //如果镜像没有运维工具，语法为："tools":[],
-//如果是apps是组合类镜像（例如：WordPress&Discuz），务必将installdr更改为组合类对应安装路径1
+//如果是apps是组合类镜像（例如：WordPress&Discuz），务必将installdr更改为组合类对应安装路径abc
 
 var appslist=[
     {"appname":"MantisBT","switch":0,
