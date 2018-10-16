@@ -43,7 +43,7 @@ var appslist=[
     {"appname":"Drupal","switch":0,
     "apphelpurl":"http://support.websoft9.com/docs/drupal-image-guide/","installdr":"/"},
     {"appname":"Empirecms(帝国)","switch":0,
-    "apphelpurl":"http://support.websoft9.com/docs/empirecms-image-guide/","installdr":"/"},
+    "apphelpurl":"http://support.websoft9.com/docs/empirecms-image-guide/","installdr":"/e/install/"},
     {"appname":"Joomla","switch":0,
     "apphelpurl":"http://support.websoft9.com/docs/joomla-image-guide/","installdr":"/"},
     {"appname":"WordPress","switch":0,
@@ -80,8 +80,9 @@ var appslist=[
      "apphelpurl":"http://support.websoft9.com/docs/cms-else/","installdr":"/"},
     {"appname":"Typecho","switch":0,
      "apphelpurl":"http://support.websoft9.com/docs/cms-else/","installdr":"/"},
-    
-    
+    {"appname":"ECSHOP","switch":0,
+     "apphelpurl":"http://support.websoft9.com/docs/ecshop-image-guide/","installdr":"/"},
+
 ];
 
 
