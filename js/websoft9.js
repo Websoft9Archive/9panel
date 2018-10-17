@@ -7,16 +7,16 @@
 //分别定义Stack的属性，switch为开关，0代表不显示，1代表显示；
 //database,databasetool等采用数组类型，满足多数据库镜像的显示
 //如果镜像没有运维工具，语法为："tools":[],
-//如果是apps是组合类镜像（例如：WordPress&Discuz），务必将installdr更改为组合类对应安装路径abc
+//如果是apps是组合类镜像(例如：WordPress&Discuz)，务必将installdr更改为组合类对应安装路径abc
 
 var appslist=[
     {"appname":"MantisBT","switch":0,
     "apphelpurl":"http://support.websoft9.com/docs/mantisbt-image-guide/","installdr":"/"},
-    {"appname":"Zentao（禅道）","switch":0,
+    {"appname":"Zentao(禅道)","switch":0,
     "apphelpurl":"http://support.websoft9.com/docs/zentaopms-image-guide/","installdr":"/"},
     {"appname":"DzzOffice","switch":0,
     "apphelpurl":"http://support.websoft9.com/docs/dzzoffice-image-guide/","installdr":"/"},
-    {"appname":"KodCloud（可道云）","switch":0,
+    {"appname":"KodCloud(可道云)","switch":0,
     "apphelpurl":"http://support.websoft9.com/docs/kodexplorer-image-guide/","installdr":"/"},
     {"appname":"NextCloud","switch":0,
     "apphelpurl":"http://support.websoft9.com/docs/nextcloud-image-guide/","installdr":"/"},
@@ -253,7 +253,7 @@ var stepsdisplay=
     "steptype":"apps",
     "steps":[
         {"stepname":"第一步：修改数据库密码","stepcontent":"为了保障您的数据安全，请在进入安装向导之前<a href='db.html'>修改【数据库管理员】密码</a>","steplinkname":"管理数据库","steplink":"db.html","stepimage":"images/phpmyadmin.png"},
-        {"stepname":"第二步：域名解析（可选）","stepcontent":"若计划使用域名，请务必先解析域名，然后【通过域名访问的方式进入安装向导】","steplinkname":"马上","steplink":null,"stepimage":"images/domain.png"},
+        {"stepname":"第二步：域名解析(可选)","stepcontent":"若计划使用域名，请务必先解析域名，然后【通过域名访问的方式进入安装向导】","steplinkname":"马上","steplink":null,"stepimage":"images/domain.png"},
         {"stepname":"第三步：进入安装向导","stepcontent":"安装向导典型流程：检查环境->连接数据库->设置后台账号->进入后台","steplinkname":"进入安装向导","steplink":null,"stepimage":"images/install003.png"}
     ],
 },
@@ -262,8 +262,8 @@ var stepsdisplay=
     "steptype":"infrastructure",
     "steps":[
         {"stepname":"第一步：修改数据库密码","stepcontent":"为了保障您的数据安全，请在进入安装向导之前<a href='db.html'>修改【数据库管理员】密码</a>","steplinkname":"管理数据库","steplink":"db.html","stepimage":"images/phpmyadmin.png"},
-        {"stepname":"第二步：环境匹配检查","stepcontent":"请根据待安装的网站（或应用程序）对环境版本（操作系统/数据库/语言/应用服务器）的要求进行检查，以免做无用功","steplinkname":"马上","steplink":null,"stepimage":"images/checkit.png"},
-        {"stepname":"第三步：安装网站","stepcontent":"基本步骤为：①上传网站代码->②域名解析（可选）->③修改配置文件->④进入安装向导","steplinkname":"打开安装指导文档","steplink":null,"stepimage":"images/install003.png"}
+        {"stepname":"第二步：环境匹配检查","stepcontent":"请根据待安装的网站(或应用程序)对环境版本(操作系统/数据库/语言/应用服务器)的要求进行检查，以免做无用功","steplinkname":"马上","steplink":null,"stepimage":"images/checkit.png"},
+        {"stepname":"第三步：安装网站","stepcontent":"基本步骤为：①上传网站代码->②域名解析(可选)->③修改配置文件->④进入安装向导","steplinkname":"打开安装指导文档","steplink":null,"stepimage":"images/install003.png"}
     ],
 },
 ];
@@ -421,12 +421,12 @@ function DisplayOtherToolsPage()
     //根据appcount的值判断：基础环境、单一应用、组合应用
     if (appcount>=1)
     {
-        stacknametile=appstitle+" <u>组合类</u> "+"（"+w9stack.name+"）";
+        stacknametile=appstitle+" <u>组合类</u> "+"("+w9stack.name+")";
     }
 
     if(appcount==0)
     {
-        stacknametile=appstitle+"（"+w9stack.name+"）";
+        stacknametile=appstitle+"("+w9stack.name+")";
     }
 
     welcomemesage="您安装的是"+stacknametile+"镜像，"+"主要环境组件包括："+w9stack.os+","+w9stack.httpserver+","+w9stack.language+","+w9stack.database+","+w9stack.databasetool;
@@ -666,7 +666,7 @@ function DisplayOtherToolsPage()
 
         if(j==2)
         {
-          //处理按钮文字和按钮数量（组合应用有两个按钮）
+          //处理按钮文字和按钮数量(组合应用有两个按钮)
           for(k=0;k<installdr.length;k++)
           {
           buttonstr=buttonstr+"<a class=\"btn btn-warning btn-lg btn-block\" href=\""+installdr[k]+"\" target=\"_blank\"  role=\"button\"> "+buttonlinkname.replace(/镜像/,stackname[k])+"</a>";
