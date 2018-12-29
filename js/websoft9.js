@@ -82,7 +82,10 @@ var appslist=[
      "apphelpurl":"http://support.websoft9.com/docs/cms-else/","installdr":"/"},
     {"appname":"ECSHOP","switch":0,
      "apphelpurl":"http://support.websoft9.com/docs/ecshop-image-guide/","installdr":"/"},
-
+    {"appname":"ThinkPHP","switch":0,
+    "apphelpurl":"http://support.websoft9.com/docs/thinkphp-image-guide/","installdr":"/"},
+    {"appname":"Laravel","switch":0,
+    "apphelpurl":"http://support.websoft9.com/docs/laravel-image-guide/","installdr":"/"},
 ];
 
 
