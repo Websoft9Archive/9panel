@@ -84,8 +84,11 @@ var appslist=[
      "apphelpurl":"http://support.websoft9.com/docs/ecshop-image-guide/","installdr":"/"},
     {"appname":"ThinkPHP","switch":0,
     "apphelpurl":"http://support.websoft9.com/docs/thinkphp-image-guide/","installdr":"/"},
+<<<<<<< HEAD
     {"appname":"ThinkCMF","switch":0,
     "apphelpurl":"http://support.websoft9.com/docs/thinkcmf-image-guide/","installdr":"/"},
+=======
+>>>>>>> dcedc131ebe122a9bd9b8cc5bd778cc57408ed73
     {"appname":"Laravel","switch":0,
     "apphelpurl":"http://support.websoft9.com/docs/laravel-image-guide/","installdr":"/"},
 ];
