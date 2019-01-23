@@ -10,7 +10,7 @@
 //如果是apps是组合类镜像（例如：WordPress&Discuz），务必将installdr更改为组合类对应安装路径abc
 
 var appslist=[
-    {"appname":"MantisBT","switch":0,
+    {"appname":"MantisBT","switch":1,
     "apphelpurl":"http://support.websoft9.com/docs/mantisbt-image-guide/","installdr":"/"},
     {"appname":"Zentao（禅道）","switch":0,
     "apphelpurl":"http://support.websoft9.com/docs/zentaopms-image-guide/","installdr":"/"},
@@ -154,12 +154,12 @@ var appslist=[
 },
 
 {
-    "name":"Java on Tomcat","switch":0,
+    "name":"Java on Tomcat","switch":1,
     "apps":appslist,
     "language":["Java"],
     "os":"Linux",
     "database":["MySQL","MariaDB"],
-    "databasetool":["phpMyAdmin"],
+    "databasetool":["jspMyAdmin"],
     "httpserver":["Nginx","Tomcat"],
     "tools":"",
     "helpurl":"http://support.websoft9.com/docs/java-tomcat-image-guide/"
@@ -171,7 +171,7 @@ var appslist=[
     "language":["Java"],
     "os":"Windows",
     "database":["MySQL","MariaDB"],
-    "databasetool":["phpMyAdmin"],
+    "databasetool":["jspMyAdmin"],
     "httpserver":["Nginx","Tomcat"],
     "tools":"",
     "helpurl":"http://support.websoft9.com/docs/java-tomcat-image-guide/"
@@ -257,7 +257,7 @@ var stepsdisplay=
 {
     "steptype":"apps",
     "steps":[
-        {"stepname":"第一步：修改数据库密码","stepcontent":"为了保障您的数据安全，请在进入安装向导之前<a href='db.html'>修改【数据库管理员】密码</a>","steplinkname":"管理数据库","steplink":"db.html","stepimage":"images/phpmyadmin.png"},
+        {"stepname":"第一步：修改数据库密码","stepcontent":"为了保障您的数据安全，请在进入安装向导之前<a href='db.html'>修改【数据库管理员】密码</a>，数据安全是最需要重视的问题","steplinkname":"管理数据库","steplink":"db.html","stepimage":"images/databasesecurity.png"},
         {"stepname":"第二步：域名解析（可选）","stepcontent":"若计划使用域名，请务必先解析域名，然后【通过域名访问的方式进入安装向导】","steplinkname":"马上","steplink":null,"stepimage":"images/domain.png"},
         {"stepname":"第三步：进入安装向导","stepcontent":"安装向导典型流程：检查环境->连接数据库->设置后台账号->进入后台","steplinkname":"进入安装向导","steplink":null,"stepimage":"images/install003.png"}
     ],
@@ -266,9 +266,9 @@ var stepsdisplay=
 {
     "steptype":"infrastructure",
     "steps":[
-        {"stepname":"第一步：修改数据库密码","stepcontent":"为了保障您的数据安全，请在进入安装向导之前<a href='db.html'>修改【数据库管理员】密码</a>","steplinkname":"管理数据库","steplink":"db.html","stepimage":"images/phpmyadmin.png"},
+        {"stepname":"第一步：修改数据库密码","stepcontent":"为了保障您的数据安全，请在进入安装向导之前<a href='db.html'>修改【数据库管理员】密码</a>，数据安全是最需要重视的问题","steplinkname":"管理数据库","steplink":"db.html","stepimage":"images/databasesecurity.png"},
         {"stepname":"第二步：环境匹配检查","stepcontent":"请根据待安装的网站（或应用程序）对环境版本（操作系统/数据库/语言/应用服务器）的要求进行检查，以免做无用功","steplinkname":"马上","steplink":null,"stepimage":"images/checkit.png"},
-        {"stepname":"第三步：安装网站","stepcontent":"基本步骤为：①上传网站代码->②域名解析（可选）->③修改配置文件->④进入安装向导","steplinkname":"打开安装指导文档","steplink":null,"stepimage":"images/install003.png"}
+        {"stepname":"第三步：安装网站","stepcontent":"典型步骤：①上传网站代码->②域名解析（可选）->③修改配置文件->④安装向导","steplinkname":"打开安装指导文档","steplink":null,"stepimage":"images/install003.png"}
     ],
 },
 ];
@@ -531,37 +531,41 @@ function DisplayOtherToolsPage()
     if (toolname=="phpMyAdmin")
     {
         tooltile="MySQL数据库管理";
-        toolcontent="本镜像使用数据库Web管理面板phpMyAdmin来管理Mysql数据库"
-        defaultaccount="root/123456"
-        toollink="phpmyadmin";
+        toolcontent="本镜像使用数据库Web管理面板phpMyAdmin来管理Mysql数据库";
+        defaultaccount="root/123456";
+        toollink="phpmyadmin/";
         toollinkname="登录phpMyAdmin";
+        displayimage="images/phpmyadmin.png";
     }
     
     if (toolname=="jspMyAdmin")
     {
         tooltile="MySQL数据库管理";
-        toolcontent="本镜像内置数据库Web管理面板phpMyAdmin来管理MySQL数据库"
-        defaultaccount="root/123456"
+        toolcontent="本镜像内置数据库Web管理面板jspMyAdmin来管理MySQL数据库";
+        defaultaccount="root/123456";
         toollink="jspmyadmin";
         toollinkname="登录jspMyAdmin";
+        displayimage="images/jspmyadmin.png";
     }
 
     if (toolname=="pgMyAdmin")
     {
         tooltile="PostgreSQL数据库管理";
-        toolcontent="本镜像内置数据库Web管理面板pgMyAdmin来管理PostgreSQL数据库"
-        defaultaccount="root/123456"
+        toolcontent="本镜像内置数据库Web管理面板pgMyAdmin来管理PostgreSQL数据库";
+        defaultaccount="root/123456";
         toollink="pgmyadmin";
         toollinkname="登录pgMyAdmin";
+        displayimage="images/pgmyadmin.png";
     }
 
     if (toolname=="SQL Server Managerment Studio")
     {
         tooltile="SQLServer数据库管理";
-        toolcontent="本镜像内置SQL Server Managerment Studio(企业管理器)"
-        defaultaccount="sa/websoft9!"
+        toolcontent="本镜像内置SQL Server Managerment Studio(企业管理器)";
+        defaultaccount="sa/websoft9!";
         toollink="#";
         toollinkname="远程桌面到服务器后，登录数据库管理工具";
+        displayimage="images/sqlserver.png";
     }
 
     dbtoolsdisplay="<div class=\"col-lg-4\">"+
