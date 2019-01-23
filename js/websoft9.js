@@ -10,7 +10,7 @@
 //如果是apps是组合类镜像（例如：WordPress&Discuz），务必将installdr更改为组合类对应安装路径abc
 
 var appslist=[
-    {"appname":"MantisBT","switch":1,
+    {"appname":"MantisBT","switch":0,
     "apphelpurl":"http://support.websoft9.com/docs/mantisbt-image-guide/","installdr":"/"},
     {"appname":"Zentao（禅道）","switch":0,
     "apphelpurl":"http://support.websoft9.com/docs/zentaopms-image-guide/","installdr":"/"},
@@ -154,7 +154,7 @@ var appslist=[
 },
 
 {
-    "name":"Java on Tomcat","switch":1,
+    "name":"Java on Tomcat","switch":0,
     "apps":appslist,
     "language":["Java"],
     "os":"Linux",
