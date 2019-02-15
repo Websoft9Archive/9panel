@@ -88,6 +88,8 @@ var appslist=[
     "apphelpurl":"http://support.websoft9.com/docs/thinkcmf-image-guide/","installdr":"/"},
     {"appname":"Laravel","switch":0,
     "apphelpurl":"http://support.websoft9.com/docs/laravel-image-guide/","installdr":"/"},
+    {"appname":"Symfony","switch":0,
+    "apphelpurl":"http://support.websoft9.com/docs/symfony-image-guide/","installdr":"/"},
 ];
 
 
