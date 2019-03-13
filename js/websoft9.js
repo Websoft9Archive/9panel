@@ -534,7 +534,7 @@ function DisplayOtherToolsPage()
     {
         tooltile="MySQL数据库管理";
         toolcontent="本镜像使用数据库Web管理面板phpMyAdmin来管理Mysql数据库";
-        defaultaccount="root/123456";
+        defaultaccount="root/密码在服务器中查看";
         toollink="phpmyadmin/";
         toollinkname="登录phpMyAdmin";
         displayimage="images/phpmyadmin.png";
@@ -544,7 +544,7 @@ function DisplayOtherToolsPage()
     {
         tooltile="MySQL数据库管理";
         toolcontent="本镜像内置数据库Web管理面板jspMyAdmin来管理MySQL数据库";
-        defaultaccount="root/123456";
+        defaultaccount="root/密码在服务器中查看";
         toollink="jspmyadmin";
         toollinkname="登录jspMyAdmin";
         displayimage="images/jspmyadmin.png";
@@ -554,7 +554,7 @@ function DisplayOtherToolsPage()
     {
         tooltile="PostgreSQL数据库管理";
         toolcontent="本镜像内置数据库Web管理面板pgMyAdmin来管理PostgreSQL数据库";
-        defaultaccount="root/123456";
+        defaultaccount="root/密码在服务器中查看";
         toollink="pgmyadmin";
         toollinkname="登录pgMyAdmin";
         displayimage="images/pgmyadmin.png";
