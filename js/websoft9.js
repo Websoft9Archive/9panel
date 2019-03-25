@@ -161,7 +161,7 @@ var appslist=[
     "language":["Java"],
     "os":"Linux",
     "database":["MySQL","MariaDB"],
-    "databasetool":["jspMyAdmin"],
+    "databasetool":["phpMyAdmin"],
     "httpserver":["Nginx","Tomcat"],
     "tools":"",
     "helpurl":"http://support.websoft9.com/docs/java-tomcat-image-guide/"
@@ -173,7 +173,7 @@ var appslist=[
     "language":["Java"],
     "os":"Windows",
     "database":["MySQL","MariaDB"],
-    "databasetool":["jspMyAdmin"],
+    "databasetool":["phpMyAdmin"],
     "httpserver":["Nginx","Tomcat"],
     "tools":"",
     "helpurl":"http://support.websoft9.com/docs/java-tomcat-image-guide/"
