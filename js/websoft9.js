@@ -7,10 +7,7 @@
 //*****************************备注******************************************* */
 
 var set_infrastructure="LAMP";
-//var set_apps=["Example"];
-var set_apps=["WordPress","Mybb"];
-//var set_apps=["MantisBT"];
-
+var set_apps=["Example"];
 
 
 //********************JSON数据区 Start********************************************** */
