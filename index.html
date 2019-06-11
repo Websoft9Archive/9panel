@@ -5,8 +5,15 @@
     <!-- Required meta tags-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content=全球10万用户正享用Websoft9提供的镜像库，包括：运行环境镜像、数据库镜像、建站镜像、WordPress等，7x24小时售后支持，专业快速解决软件安装和配置问题，助中小企业轻松用云。">
-    <meta name="keywords" content="云计算，运行环境，镜像库，自动部署，云服务，安装网站，配置SMTP/HTTPS">
+
+     <!-- Chinese tags-->
+     <meta name="description" content="全球10万用户正享用Websoft9提供的镜像库，包括：运行环境镜像、数据库镜像、建站镜像、WordPress等，7x24小时售后支持，专业快速解决软件安装和配置问题，助中小企业轻松用云。">
+     <meta name="keywords" content="云计算，运行环境，镜像库，自动部署，云服务，安装网站，阿里云，华为云，腾讯云，AWS,Azure">
+     <!-- english tags-->
+     <meta name="description" content="100,000 users around the world are enjoying the image library provided by Websoft9, including: running environment image, database mirroring, website mirroring, WordPress, etc., 7x24 hours after-sales support, professionally solve software installation and configuration problems quickly, help SMEs easily use the cloud">
+     <meta name="keywords" content="Cloud computing, runtime environment, image library, auto-deployment, cloud service, installation website, AWS,Azure,Huawei Cloud,Alibaba Cloud">
+ 
+
     <meta http-equiv="Cache-Control" content="no-siteapp" />
 
     <meta charset="UTF-8">
@@ -15,7 +22,7 @@
 
     <link rel="icon" href="favicon.ico" />
     <!-- Title Page-->
-    <title>Websoft9运维面板-9Panel</title>
+    <title>9Panel-用于Websoft9镜像的快速入门小工具</title>
 
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
@@ -32,12 +39,18 @@
     <!-- Vendor CSS-->
     <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
 
-    <!-- Websoft9 JS-->
-    <script src="js/websoft9.js"></script>
+    <!-- Vue JS-->
+    <script src="vendor/vue/vue.min.js" ></script>
+    <script src="vendor/vue/vue-i18n.js" ></script>
+
+    
 
 </head>
 
-<body onload="DisplayIndexPage()">
+<body>
+  <!-- Vue实例作用域开始。v-cloak标签用于在渲染前禁止显示模板标签，v-cloak需要在css中进行定义-->
+  <div id="vuejsdisplay" v-cloak>
+  <div id="like_button_container"></div>
     <div class="page-wrapper">
         <!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
@@ -47,41 +60,38 @@
                 </a>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
-                <nav class="navbar-sidebar" id="leftmenu">
-                </nav>
+              <nav class="navbar-sidebar" id="leftmenu"> <panelleftmenu></panelleftmenu> </nav>
             </div>
         </aside>
         <!-- END MENU SIDEBAR-->
 
         <!-- PAGE CONTAINER-->
-        <div class="page-container">
+        <div class="page-container" >
             <!-- HEADER DESKTOP-->
-            <script src="js/header-desktop.js"></script>
+            <panelheader></panelheader>
+            
+            
             <!-- HEADER DESKTOP-->
 
             <!-- MAIN CONTENT-->
-            <div class="main-content">
+            <div class="main-content" >
                 <div class="section__content section__content--p30">
-                   <!-- 镜像说明-->
-                        <div class="jumbotron">
-                                <h1 class="display-4">Hello, 欢迎使用Websoft9提供的镜像!</h1>
-                                <p class="lead" id="displaywelcome">您安装的是LAMP基础环境镜像，包含：Linux，Apache，PHP，MySQL。请参考下面的步骤，完成</p>  
-                        </div>
-                   <!-- End 镜像说明-->
+                   <!-- 镜像Welcome说明-->
+                  <displayindexcomponents></displayindexcomponents> 
+                               
+                   <!-- End 镜像Welcome说明-->
                     <div class="container-fluid">
 
                          <!-- 快速安装-->
                          <div class="row">
                             <div class="col-md-12">
                                 <div class="overview-wrap">
-                                    <h2 class="title-1">快速使用：</h2>
+                                    <h2 class="title-2"> {{ $t("message.index_qs") }}</h2>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row m-t-25" id="stackinstallation">
-
-                        </div>
-
+                        </div>                
+                        <div class="row m-t-25" id="stackinstallation" v-if="isinfrastructure"><installsteps></installsteps></div>
+                        <div class="row m-t-25" id="appsinstallation" v-else> <installappssteps></installappssteps></div>
                         <!-- End 快速安装-->
 
 
@@ -89,7 +99,7 @@
                         <div class="row">
                                 <div class="col-md-12">
                                     <div class="overview-wrap">
-                                        <h2 class="title-1">您可能感兴趣：</h2>
+                                        <h2 class="title-2"> {{ $t("message.index_ylike") }}</h2>
                                     </div>
                                 </div>
                         </div>
@@ -103,16 +113,13 @@
                                           <div class="card-header" id="headingTwo">
                                             <h5 class="mb-0">
                                               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                9Panel是什么？能改名或删除吗？
+                                                {{ $t("message.index_qa11") }}
                                               </button>
                                             </h5>
                                           </div>
                                           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                            <div class="card-body">
-                                            9Panel是快捷面板工具，集成数据库管理工具、系统运维工具、文档和支持服务入口，重点在于连接知识库和服务，几乎不会占用系统资源，也不会对系统文件进行任何修改。<br>
-                                            -如果对9Panel文件夹进行改名或删除，需要修改9Panel对应配置的文件，否则系统会报错。(修改配置文件对普通用户来说有难度)<br>
-                                            -如果想隐藏9Panel的默认页面，建议将index.html改名；<br>
-                                            -如果不需要9Panel，请删除9Panel下所有内容，保留空的9Panel文件夹即可
+                                            <div class="card-body" v-html="$t('message.index_qa12')">
+                                          
                                             </div>
                                           </div>
                                         </div>
@@ -121,13 +128,13 @@
                                           <div class="card-header" id="headingThree">
                                             <h5 class="mb-0">
                                               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                本镜像能够安装多个网站或应用吗？
+                                                {{ $t("message.index_qa21") }}
                                               </button>
                                             </h5>
                                           </div>
                                           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                            <div class="card-body">
-                                                可以安装多个网站或应用，具体请参考镜像手册                                       
+                                            <div class="card-body" v-html="$t('message.index_qa22')">
+                                                                       
                                             </div>
                                           </div>
                                         </div>
@@ -143,13 +150,13 @@
                                           <div class="card-header" id="headingFour">
                                             <h5 class="mb-0">
                                               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                               为什么要修改数据库密码？
+                                                {{ $t("message.index_qa31") }}
                                               </button>
                                             </h5>
                                           </div>
                                           <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                                            <div class="card-body">
-                                            默认的数据库密码比较简单，为了安全和便于记忆，请务必改成您自己的强安全密码
+                                            <div class="card-body" v-html="$t('message.index_qa32')">
+                                         
                                             </div>
                                           </div>
                                         </div>
@@ -157,13 +164,13 @@
                                           <div class="card-header" id="headingFive">
                                             <h5 class="mb-0">
                                               <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                                没有域名可以安装网站吗？
+                                                {{ $t("message.index_qa41") }}
                                               </button>
                                             </h5>
                                           </div>
                                           <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
                                             <div class="card-body">
-                                            如果没有可用域名，可用IP的方式安装网站。但有些软件（例如：WordPress）会将安装路径记录到数据库，将来改成域名访问需要做出修改方可使用                                 
+                                              {{ $t("message.index_qa42") }}                              
                                             </div>
                                           </div>
                                         </div>
@@ -185,6 +192,9 @@
 
     </div>
 
+    <!-- Modal -->
+    <modalsupport></modalsupport>
+
     <!-- Jquery JS-->
     <script src="vendor/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap JS-->
@@ -195,7 +205,10 @@
     <!-- Main JS-->
     <script src="js/main.js"></script>
 
-</body>
+    <!-- Websoft9 config-->
+    <script src="js/websoft9.js"></script>
 
+</div>
+</body>
 </html>
 <!-- end document-->
