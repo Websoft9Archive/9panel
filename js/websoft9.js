@@ -3,6 +3,7 @@
 //应用名称(最多不超过2个)，默认为Example,表示安装的是示例
 //var set_apps=["WordPress","Mybb"];
 //var set_apps=["WordPress"];
+//var set_apps=["Joomla"];
 
 //*****************************备注******************************************* */
 
