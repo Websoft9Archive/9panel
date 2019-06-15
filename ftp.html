@@ -70,7 +70,7 @@
          <div class="col-lg-12"> 
           <div class="au-card recent-report"> 
            <div class="au-card-inner"> 
-            <h3 class="title-2"><i class="fas fa-folder-open"></i> {{ $t('message.breadcrumbs_ftp') }}</h3>
+            <h3 class="title-2"><i class="fas fa-folder-open"></i> {{ $t('message.solution_selection1') }} {{ $t('message.breadcrumbs_ftp') }}</h3>
             <br /> 
             <div class="alert alert-secondary" role="alert"> 
              <p class="lead">{{ $t('message.ftp_content_linux') }}</p> 
@@ -80,11 +80,35 @@
             <img v-if="Global_languagetype=='en'" src="images/winscp-newsite_en.png" class="img-fluid" /> 
             <div class="au-task__footer"> 
              <a class="btn btn-primary" href="https://winscp.net/eng/docs/lang:chs" target="_blank" role="button">{{ $t('message.ftp_button_linux') }}</a> 
-            </div> 
+            </div>            
            </div> 
           </div> 
          </div> 
         </div> 
+
+        <div class="row" id="linuxlogin" v-if="islinux"> 
+            <div class="col-lg-12"> 
+             <div class="au-card recent-report"> 
+              <div class="au-card-inner"> 
+               <h3 class="title-2"><i class="fas fa-folder-open"></i> {{ $t('message.solution_selection2') }}  {{ $t('message.breadcrumbs_ftp') }}</h3>
+               <br /> 
+               <div class="alert alert-secondary" role="alert"> 
+                <p class="lead">使用云厂商的在线管理终端或SSH客户端软件（例如：<a href="https://putty.org/" target="_blank">putty</a>），直接运行命令,也可以获取数据库密码，上传、下载或修改文件</p> 
+               </div> 
+               <div>
+                   <hr class="line-seprate">
+                   <br>
+                   <h4></h4>
+                   <img class="rounded mx-auto d-block" src="images/catpassword.png" >
+                   <p class="text-center">{{ $t('message.ftp_getpwbycommand') }}</p>
+               </div>
+               
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+
+
         <div class="row" id="windowslogin" v-else="islinux"> 
          <div class="col-lg-12"> 
           <div class="au-card recent-report"> 

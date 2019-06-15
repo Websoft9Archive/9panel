@@ -355,7 +355,7 @@ const messages = {
       index_qa21: '本镜像能够安装多个网站或应用吗？',
       index_qa22: '可以安装多个网站或应用，具体请参考镜像手册',
       index_qa31: '数据库用户和密码是多少？',
-      index_qa32: '本镜像中所用到的数据库密码具有唯一性，基于高安全策略自动生成后存放在您的服务器中，您需要连接到您的云服务器中获取密码：<br> --Windows镜像的数据库密码存放路径： 服务器桌面/password.txt<br> --Linux镜像的数据库密码存放路径： /credential/password.txt',
+      index_qa32: '本镜像中所用到的数据库密码具有唯一性，基于高安全策略自动生成后存放在您的服务器中，您需要连接到您的云服务器中获取密码：<br> --Windows镜像的数据库密码存放路径： 服务器桌面/password.txt<br> --Linux镜像的数据库密码存放路径： /credentials/password.txt',
       index_qa41: '没有域名可以安装网站吗？',
       index_qa42: '如果没有可用域名，可用IP的方式安装网站。但有些软件（例如：WordPress）会将安装路径记录到数据库，将来改成域名访问需要做出修改方可使用',
 
@@ -372,15 +372,24 @@ const messages = {
       ftp_button_windows:'深入了解远程桌面',
       ftp_image_linux: '',
       ftp_image_windows:'',
+      ftp_getpwbycommand:'图：运行 cat /credentials/password.txt 命令，获取数据账号密码',
 
       db_title: '{dbname}数据库管理',
-      db_content: '本镜像包含可视化工具{dbtoolname}，可创建数据库、管理数据库用户、导入导出、运行SQL命令等。数据库密码基于高安全策略自动生成，并存放在您的服务器中，请<a href="ftp.html">连接到您的云服务器</a>中获取它：',
+      db_content: '本镜像包含可视化工具{dbtoolname}，可创建数据库、管理数据库用户、导入导出、运行SQL命令等。',
       db_credentialpath: '数据库密码存放路径：',
       db_loginbutton: '登录{dbtoolname}', 
-      db_loginmethod: '服务器桌面',
+      db_loginmethod: 'Windows桌面',
       db_windowslogin: '远程桌面到服务器后，',
+      db_getdbpw: '不知道账号密码？',
+      db_getdbpw2: '数据库账号密码',
+      db_getdbpw_content1: '账号密码存放在您的云服务器',
+      db_getdbpw_content2: '文件中，<a href="ftp.html" target="_blank">连接到您的云服务器</a>，即可获取',
+      db_getdbpw_note: '注意：数据库密码是初装镜像之时，随机生成的高安全密码，请妥善保管',
 
       tools_loginbutton:'登录{tooltitle}',
+
+      solution_selection1: '方式一：使用SFTP',
+      solution_selection2: '方式二：使用命令',
 
     },
 
@@ -448,7 +457,7 @@ const messages = {
       index_qa21: 'Can this image install multiple websites or apps?',
       index_qa22: 'Multiple websites or applications can be installed. Please refer to the mirror manual for details.',
       index_qa31: 'Username and Password of Database?',
-      index_qa32: 'The database password used in this image is unique. It is automatically generated based on a high security policy and stored on your server. You need to connect to your cloud server to get the password: <br>--Windows image database password file path: Desktop of Server/password.txt <br> --Linux image database password file path: /credential/password.txt',
+      index_qa32: 'The database password used in this image is unique. It is automatically generated based on a high security policy and stored on your server. You need to connect to your cloud server to get the password: <br>--Windows image database password file path: Desktop of Server/password.txt <br> --Linux image database password file path: /credentials/password.txt',
       index_qa41: 'Can I install a website without a domain name?',
       index_qa42: 'If no domain name is available, the website can be installed by IP. However, some software (for example, WordPress) will record the installation path to the database. In the future, the domain name access needs to be modified before it can be used.',
     
@@ -460,15 +469,24 @@ const messages = {
       ftp_button_windows:'Learn more about remote desktops',
       ftp_image_linux: '',
       ftp_image_windows:'',
+      ftp_getpwbycommand:'Picture: Get database password by command',
 
       db_title: '{dbname} Management',
-      db_content: 'This image includes Web GUI tool {dbtoolname} to manage Database, Database password is an automatically generated secure password, need <a href="ftp.html">connect to your cloud server</a> to get it',
+      db_content: 'This image includes Web GUI tool {dbtoolname} to manage Database',
       db_credentialpath: 'Password acquisition path:',
       db_loginbutton: 'Login {dbtoolname}', 
-      db_loginmethod: 'Desktop',
+      db_loginmethod: 'Windows Desktop',
       db_windowslogin: 'Remote log in to Windows,then',
+      db_getdbpw: 'Not have username and password?',
+      db_getdbpw2: 'Database username and password',
+      db_getdbpw_content1: 'The account password is stored in your cloud server',
+      db_getdbpw_content2:'file, <a href="ftp.html" target="_blank">connect to your cloud server</a>, you can get it ',
+      db_getdbpw_note: 'Note: The database password is a randomly generated high security password when the image is first installed. Please keep it safe.',
 
       tools_loginbutton:'Login {tooltitle}',
+
+      solution_selection1: 'Method 1: Using SFTP',
+      solution_selection2: 'Method 2: Using Command',
   
     },
     exmaple:{
@@ -672,7 +690,7 @@ methods: {
 Vue.component('modalsupport', {
   template: `
   <div class="modal fade" id="modalsupport" tabindex="-900" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h4 class="modal-title" id="exampleModalLabel">{{ $t("message.header_supportmodalTitle") }}</h4>
@@ -938,22 +956,25 @@ Vue.component('databasegui',{
   <div class="au-card recent-report"> 
    <div class="au-card-inner"> 
     <h3 class="title-2"><i class="fas fa-database"></i> {{ $t('message.db_title',{dbname}) }} </h3>
+    <hr class="line-seprate">
     <br /> 
     <div> 
      <p class="lead" v-html="$t('message.db_content',{dbtoolname})">  </p> 
-     <p class="lead">
-     <span class="badge badge-danger">
-     {{ $t('message.db_credentialpath') }}  
-     <span v-if="islinux">/credential</span> 
-     <span v-else>{{ $t('message.db_loginmethod') }}</span> 
-     {{pwpath}}
-     </span>
-     </p>
+     
     </div> 
     <div class="au-task__footer"> 
-     <a v-if="dbtools[this.dblist].toollink=='#'" class="btn btn-primary text-light"  role="button">{{ $t('message.db_windowslogin') }} {{ $t('message.db_loginbutton',{dbtoolname}) }}  </a> 
-     <a v-else class="btn btn-warning" v-bind:href="dbtoollink" target="_blank" role="button"> {{ $t('message.db_loginbutton',{dbtoolname}) }}</a> 
+     <a v-if="dbtools[this.dblist].toollink=='#'" class="btn btn-primary btn-lg btn-block text-light"  role="button">{{ $t('message.db_windowslogin') }} {{ $t('message.db_loginbutton',{dbtoolname}) }}  </a> 
+     <a v-else class="btn btn-warning btn-lg btn-block" v-bind:href="dbtoollink" target="_blank" role="button"> {{ $t('message.db_loginbutton',{dbtoolname}) }}</a>
+     
+     <div>
+     <p class="text-right"> 
+     <br>
+     <a data-toggle="modal" data-target="#modaldbpassword" href="#" class="js-acc-btn text-muted ">{{$t('message.db_getdbpw')}}</a>
+     </p>
+     </div>
+     
     </div> 
+
    </div> 
   </div> 
  </div>
@@ -963,6 +984,54 @@ Vue.component('databasegui',{
   
     }
 })
+
+
+
+//点击“不知道账号密码”后的弹出对话框
+Vue.component('modaldbpassword', {
+  data: function () {
+    return {
+      pwpath_linux:'/credentials',
+      pwpath_windows:'桌面',
+      islinux:boolean_ostype(),
+    }
+  },
+  
+  template: `
+<div class="modal fade bd-example-modal-lg" id="modaldbpassword" tabindex="-900" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">{{$t('message.db_getdbpw2')}}</h5>
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <p>
+      <span>{{ $t('message.db_getdbpw_content1') }}</span>
+      <b>
+      <span v-if="islinux">/credentials/password.txt</span>
+      <span v-else>{{ $t('message.db_loginmethod') }}/password.txt</span>
+      </b>
+      <span v-html="$t('message.db_getdbpw_content2')"></span>
+      </p>
+      <br>
+      <div class="alert alert-warning" role="alert">
+      {{ $t('message.db_getdbpw_note') }}
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+  `,
+  methods: {
+
+  }
+  
+})
+
 
 //vue.js主实例
 var VueJsDisplay=new Vue({
