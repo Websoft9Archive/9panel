@@ -372,7 +372,8 @@ const messages = {
       ftp_button_windows:'深入了解远程桌面',
       ftp_image_linux: '',
       ftp_image_windows:'',
-      ftp_getpwbycommand:'图：运行 cat /credentials/password.txt 命令，获取数据账号密码',
+      ftp_getpwbycommand:'图示例：运行 cat /credentials/password.txt 命令，获取数据账号密码',
+      ftp_linux_title: '使用云厂商的在线管理终端 或 SSH客户端软件（例如：<a href="https://putty.org/" target="_blank">putty</a>），通过运行命令，也可以获取数据库密码，上传、下载或修改文件',
 
       db_title: '{dbname}数据库管理',
       db_content: '本镜像包含可视化工具{dbtoolname}，可创建数据库、管理数据库用户、导入导出、运行SQL命令等。',
@@ -470,6 +471,7 @@ const messages = {
       ftp_image_linux: '',
       ftp_image_windows:'',
       ftp_getpwbycommand:'Picture: Get database password by command',
+      ftp_linux_title: 'Use the cloud console online management terminal or SSH client software (for example: <a href="https://putty.org/" target="_blank">putty</a>) to get the database by running the command. Password, upload, download or modify file',
 
       db_title: '{dbname} Management',
       db_content: 'This image includes Web GUI tool {dbtoolname} to manage Database',
