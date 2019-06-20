@@ -548,7 +548,11 @@ var get_dbtoolsID=new Array();
 IndexOf_dbtools(websoft9stack[get_indexID].databasetool);
 
 get_othertoolsID=new Array();
-IndexOf_othertools(websoft9stack[get_indexID].tools);
+if (websoft9stack[get_indexID].tools !="")
+{
+  IndexOf_othertools(websoft9stack[get_indexID].tools);
+}
+
 
 //获取apps的安装向导路径（一般是绝对路径，少量镜像带path或端口号，第二个应用开始为/appname）
 var get_appsInstallPath=new Array();
@@ -1117,7 +1121,7 @@ function IndexOf_dbtools(str){
   //检索没有发现应用，提示应用不存在
   if(j==0)
     {
-      alert("应用名称不存在，请仔细检查！");
+      alert("数据库GUI名称不存在，请仔细检查！");
     }
   
 }
@@ -1139,7 +1143,7 @@ function IndexOf_othertools(str){
   //检索没有发现应用，提示应用不存在
   if(j==0)
     {
-      alert("应用名称不存在，请仔细检查！");
+      alert("小工具名称不存在，请仔细检查！");
     }
   
 }
