@@ -7,7 +7,7 @@
 
 //*****************************备注******************************************* */
 
-var set_infrastructure="WAMPServer";
+var set_infrastructure="LAMP";
 var set_apps=["Example"];
 
 
@@ -295,13 +295,14 @@ var set_apps=["Example"];
     "toollink":":9090",
     "displayimage":"images/adminmogo.png"
   },
+
   {
-	"toolname":"dbForge",
+	  "toolname":"dbForge",
     "db":"MySQL",
     "tooltile":"MySQL数据库管理",
     "toolcontent":"本镜像内置数据库管理工具dbForge来管理Mysql数据库",
     "defaultaccount":"/password.txt",
-	"toollink":"#",
+	  "toollink":"#",
     "displayimage":"images/dbofrge.png"
   }
   
