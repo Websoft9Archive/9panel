@@ -7,7 +7,7 @@
 
 //*****************************备注******************************************* */
 
-var set_infrastructure="LAMP";
+var set_infrastructure="WAMPServer";
 var set_apps=["Example"];
 
 
@@ -105,7 +105,7 @@ var set_apps=["Example"];
     "language":["PHP"],
     "os":"Windows",
     "database":["MySQL"],
-    "databasetool":["phpMyAdmin"],
+    "databasetool":["phpMyAdmin","dbForge"],
     "httpserver":["Apache"],
     "tools":["php-fork","php-info","php-opcache"],
     "helpurl":"wamp"
@@ -117,7 +117,7 @@ var set_apps=["Example"];
     "language":["PHP"],
     "os":"Windows",
     "database":["MySQL"],
-    "databasetool":["phpMyAdmin"],
+    "databasetool":["phpMyAdmin","dbForge"],
     "httpserver":["Apache"],
     "tools":["php-fork","php-info","php-opcache"],
     "helpurl":"wampserver"
@@ -295,7 +295,15 @@ var set_apps=["Example"];
     "toollink":":9090",
     "displayimage":"images/adminmogo.png"
   },
-  
+  {
+	"toolname":"dbForge",
+    "db":"MySQL",
+    "tooltile":"MySQL数据库管理",
+    "toolcontent":"本镜像内置数据库管理工具dbForge来管理Mysql数据库",
+    "defaultaccount":"/password.txt",
+	"toollink":"#",
+    "displayimage":"images/dbofrge.png"
+  }
   
   ];
   
@@ -481,7 +489,7 @@ const messages = {
       ftp_linux_title: 'Use the cloud console online management terminal or SSH client software (for example: <a href="https://putty.org/" target="_blank">putty</a>) to get the database by running the command. Password, upload, download or modify file',
 
       db_title: '{dbname} Management',
-      db_content: 'This image includes Web GUI tool {dbtoolname} to manage Database',
+      db_content: 'This image includes GUI tool {dbtoolname} to manage Database',
       db_credentialpath: 'Password acquisition path:',
       db_loginbutton: 'Login {dbtoolname}', 
       db_loginmethod: 'Windows Desktop',
