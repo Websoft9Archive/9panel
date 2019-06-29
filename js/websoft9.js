@@ -183,7 +183,6 @@ var set_apps=["Example"];
     {"appname":"Dolibarr",    "apphelpurl":"dolibarr",    "installdr":"/"},
     {"appname":"Drupal",    "apphelpurl":"drupal",    "installdr":"/"},
     {"appname":"DreamFactory",    "apphelpurl":"dreamfactory",    "installdr":"/"},
-    {"appname":"dzzoffice",    "apphelpurl":"dzzoffice",    "installdr":"/"},
     {"appname":"EspoCRM",    "apphelpurl":"espocrm",    "installdr":"/"},
     {"appname":"Empirecms",    "apphelpurl":"empirecms",    "installdr":"/e/install/"},
     {"appname":"ECSHOP",     "apphelpurl":"ecshop",     "installdr":"/"},
