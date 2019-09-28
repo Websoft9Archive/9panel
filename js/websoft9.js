@@ -350,7 +350,7 @@ const messages = {
       breadcrumbs_db: '数据库管理工具',
       breadcrumbs_tools: '运维工具',
 
-      header_searchURL:'http://support.websoft9.com/',
+      header_searchURL:'https://support.websoft9.com/',
       header_searchKey:'关键字搜索',
       header_support: '技术支持',
       header_supportmodalTitle: '选择您需的技术支持语种',
@@ -417,7 +417,7 @@ const messages = {
       exm_feature4:'及时服务',
       exm_feature5:'多语言',
       exm_breadcrumbs:'当前位置: 您的云服务器  /  示例网站首页',
-      exm_welcome:'恭喜您，由 <a href="http://www.websoft9.com" target="_blank">Websoft9</a>提供的 {imagename} 镜像已经成功安装到您的服务器',
+      exm_welcome:'恭喜您，由 <a href="https://www.websoft9.com" target="_blank">Websoft9</a>提供的 {imagename} 镜像已经成功安装到您的服务器',
       exm_to9panel:'自助使用镜像',
       exm_to9panel_b:'进入自助向导',
       exm_helpdesk:'人工支持',
@@ -453,7 +453,7 @@ const messages = {
       breadcrumbs_db: 'Database GUI',
       breadcrumbs_tools: 'Other Tools',
 
-      header_searchURL:'http://en.websoft9.com/',
+      header_searchURL:'https://support.websoft9.com/',
       header_searchKey:'',
       header_support: 'Support',
       header_supportmodalTitle: 'Choose your preferred language of Support',
@@ -514,7 +514,7 @@ const messages = {
       exm_feature4:'Instant Support',
       exm_feature5:'Multi-language',
       exm_breadcrumbs:'You are here: Your cloud server / Sample website home page',
-      exm_welcome:'The image  {imagename} powered by <a href="http://www.websoft9.com" target="_blank">Websoft9</a> was installed on your Cloud Server',
+      exm_welcome:'The image  {imagename} powered by <a href="https://www.websoft9.com" target="_blank">Websoft9</a> was installed on your Cloud Server',
       exm_to9panel:'Self-service',
       exm_to9panel_b:'Go to Self-service',
       exm_helpdesk:'Helpdesk',
@@ -699,10 +699,10 @@ methods: {
 
     if (this.$i18n.locale=='zh')
     {
-     return 'http://support.websoft9.com/kbtopic/usecloud/';
+     return 'https://support.websoft9.com/docs/faq/zh';
     }
     else
-     return 'https://en.websoft9.com/';
+     return 'https://support.websoft9.com/docs/faq';
  },
 },
 })
@@ -721,8 +721,8 @@ Vue.component('modalsupport', {
       </div>
       
       <div class="modal-footer">
-        <a href="https://en.websoft9.com/support/" target="_blank" role="button" class="btn btn-light">English</a>
-        <a href="http://support.websoft9.com" target="_blank" role="button" class="btn btn-danger" >中文</a>
+        <a href="https://support.websoft9.com" target="_blank" role="button" class="btn btn-light">English</a>
+        <a href="https://support.websoft9.com/zh" target="_blank" role="button" class="btn btn-danger" >中文</a>
       </div>
     </div>
   </div>
@@ -758,11 +758,11 @@ Vue.component('panelleftmenu', {
 
      if (this.$i18n.locale=='zh')
      {
-      leftmenu_document_url='http://support.websoft9.com/docs/'+set_leftmenu_link()+'-image-guide';      
+      leftmenu_document_url='https://support.websoft9.com/docs/'+set_leftmenu_link()+'/zh';      
      }
      else
      {
-      leftmenu_document_url='http://en.websoft9.com/docs/'+set_leftmenu_link();      
+      leftmenu_document_url='https://support.websoft9.com/docs/'+set_leftmenu_link();      
      }
      return leftmenu_document_url;     
     },
@@ -772,10 +772,10 @@ Vue.component('panelleftmenu', {
 
     if (this.$i18n.locale=='zh')
     {
-     return 'http://support.websoft9.com/kbtopic/usecloud/';
+     return 'https://support.websoft9.com/docs/faq/zh';
     }
     else
-    return 'https://en.websoft9.com/docs/cloud/';
+    return 'https://support.websoft9.com/docs/faq';
     },
 
      //让菜单中当前页面为蓝色
