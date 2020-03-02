@@ -56,6 +56,9 @@ var set_apps=["WordPress","Discuz"];
 
 ## 版本说明
 
+V1.2.1  2020-03-02
+* 修正apps名称判断，例如：支持WordPress、wordpress、Wordpress等格式
+
 V1.2  2019-6-31
 * 引入了vue.js，实现了中文和英文语言，自动匹配浏览器显示，暂时无法判断Cookie
 * 修改了logo,安装向导等图片
