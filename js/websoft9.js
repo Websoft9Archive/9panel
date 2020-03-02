@@ -1078,7 +1078,7 @@ function IndexOf_websoft9stack(str_stackname){
   var j=0;
   for(i=0;i<websoft9stack.length;i++)
   {
-    if (websoft9stack[i].name==str_stackname)
+    if (websoft9stack[i].name.toLowerCase()==str_stackname.toLowerCase())
     {
       j++;
       return i;
@@ -1094,11 +1094,19 @@ function IndexOf_websoft9stack(str_stackname){
 
 //获取apps的编号（组合镜像最多有2个编号）
 function IndexOf_appslist(str_appname){
+    
+    //临时转换为小写，用于判断和纠错，例如：Wordpress 就不会再报错了。
+    var temp_str_appname=[];
+    for(i=0;i<str_appname.length;i++)
+    {
+      temp_str_appname[i]=str_appname[i].toLowerCase()	
+    }
+    
     var j=0;
     for(i=0;i<appslist.length;i++)
     {
       //apps匹配
-      if (str_appname.indexOf(appslist[i].appname) != -1)
+      if (temp_str_appname.indexOf(appslist[i].appname.toLowerCase()) != -1)
       {
         get_index_appsID[j]=i;
         j++;
