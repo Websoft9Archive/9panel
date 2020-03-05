@@ -1,9 +1,9 @@
 //*****************************备注******************************************* */
 
 //应用名称(最多不超过2个)，默认为Example,表示安装的是示例
-//var set_apps=["WordPress","Mybb"];
-//var set_apps=["WordPress"];
-//var set_apps=["Joomla"];
+//var set_apps=["Appsname"];
+//var set_apps=["Appsname1","Appsname2"];
+//例如：Appsname的值可以是：WordPress, Joomla, Discuz等
 
 //*****************************备注******************************************* */
 
@@ -1096,29 +1096,29 @@ function IndexOf_websoft9stack(str_stackname){
 function IndexOf_appslist(str_appname){
     
     //临时转换为小写，用于判断和纠错，例如：Wordpress 就不会再报错了。
-    var temp_str_appname=[];
-    for(i=0;i<str_appname.length;i++)
-    {
-      temp_str_appname[i]=str_appname[i].toLowerCase()	
-    }
-    
-    var j=0;
+    var temp_str_appslist=[];
     for(i=0;i<appslist.length;i++)
     {
+      temp_str_appslist[i]=appslist[i].appname.toLowerCase()	
+    }
+    
+    for(i=0;i<str_appname.length;i++)
+    {
       //apps匹配
-      if (temp_str_appname.indexOf(appslist[i].appname.toLowerCase()) != -1)
+      if (temp_str_appslist.indexOf(str_appname[i].toLowerCase()) != -1)
       {
-        get_index_appsID[j]=i;
-        j++;
-      }      
-    };
-
-    //检索没有发现应用，提示应用不存在
-    if(j==0)
+        get_index_appsID[i]=temp_str_appslist.indexOf(str_appname[i].toLowerCase());
+      }
+      else
       {
-        alert("应用名称不存在，请仔细检查！");
+        alert(str_appname[i]+"名称拼写不符合要求，请仔细检查！")
       }
     
+    };
+
+
+    
+
   }
 
 //获取dbtools的编号
