@@ -175,8 +175,8 @@ var set_apps=["Example"];
 
   //安装到基础环境上的应用程序
   var appslist=[
-    {"appname":"chanzhiESP",     "apphelpurl":"cms-else",     "installdr":"/"},
-    {"appname":"CmsEasy",     "apphelpurl":"cms-else",     "installdr":"/"},
+    {"appname":"Chanzhi",     "apphelpurl":"chanzhi",     "installdr":"/"},
+    {"appname":"CmsEasy",     "apphelpurl":"cmseasy",     "installdr":"/"},
     {"appname":"Codiad",     "apphelpurl":"codiad",     "installdr":"/"},
     {"appname":"DzzOffice","apphelpurl":"dzzoffice","installdr":"/"},
     {"appname":"Discuz",    "apphelpurl":"discuz",    "installdr":"/"},
@@ -188,11 +188,11 @@ var set_apps=["Example"];
     {"appname":"ECSHOP",     "apphelpurl":"ecshop",     "installdr":"/"},
     {"appname":"HDWiki",    "apphelpurl":"hdwiki",    "installdr":"/"},
     {"appname":"Joomla",    "apphelpurl":"joomla",    "installdr":"/"},
-    {"appname":"KodExplorer","apphelpurl":"kodexplorer","installdr":"/"},
+    {"appname":"Kodcloud","apphelpurl":"kodcloud","installdr":"/"},
     {"appname":"Laravel",    "apphelpurl":"laravel",    "installdr":"/"},
     {"appname":"MantisBT","apphelpurl":"mantisbt","installdr":"/"},
     {"appname":"Mediawiki",    "apphelpurl":"mediawiki",    "installdr":"/"},
-    {"appname":"Mybb",     "apphelpurl":"cms-else",     "installdr":"/"},
+    {"appname":"Mybb",     "apphelpurl":"mybb",     "installdr":"/"},
     {"appname":"Moodle",    "apphelpurl":"moodle",    "installdr":"/"},
     {"appname":"Magento",    "apphelpurl":"magento",    "installdr":"/"},
     {"appname":"Matomo",    "apphelpurl":"matomo",    "installdr":"/"},
@@ -202,11 +202,11 @@ var set_apps=["Example"];
     {"appname":"OneThink",    "apphelpurl":"onethink",    "installdr":"/"},
     {"appname":"Pydio",    "apphelpurl":"pydio",    "installdr":"/"},
     {"appname":"Prestashop",    "apphelpurl":"prestashop",    "installdr":"/"},
-    {"appname":"PHPWind",     "apphelpurl":"cms-else",     "installdr":"/"},
+    {"appname":"PHPWind",     "apphelpurl":"phpwind",     "installdr":"/"},
     {"appname":"Ranzhi",    "apphelpurl":"ranzhi",    "installdr":"/"},
     {"appname":"ResourceSpace",    "apphelpurl":"resourcespace",    "installdr":"/"},
-    {"appname":"SiteFactory",     "apphelpurl":"cms-else",     "installdr":"/"},
-    {"appname":"SiteServer",     "apphelpurl":"cms-else",     "installdr":"/"},
+    {"appname":"SiteFactory",     "apphelpurl":"sitefactory",     "installdr":"/"},
+    {"appname":"SiteServer",     "apphelpurl":"siteserver",     "installdr":"/"},
     {"appname":"Symfony",    "apphelpurl":"symfony",    "installdr":"/"},
     {"appname":"SuiteCRM",    "apphelpurl":"suitecrm",    "installdr":"/"},
     {"appname":"ThinkPHP",    "apphelpurl":"thinkphp",    "installdr":"/"},
@@ -219,8 +219,8 @@ var set_apps=["Example"];
     {"appname":"WeEngine",     "apphelpurl":"cms-else",     "installdr":"/"},
     {"appname":"WordPress",    "apphelpurl":"wordpress",    "installdr":":/"},
     {"appname":"Zentao",    "apphelpurl":"zentao","installdr":"/"},
-    {"appname":"Xcart",     "apphelpurl":"cms-else",     "installdr":"/"},
-    {"appname":"ZurmoCRM",    "apphelpurl":"zurmocrm",    "installdr":"/"},
+    {"appname":"Xcart",     "apphelpurl":"xcart",     "installdr":"/"},
+    {"appname":"Zurmo",    "apphelpurl":"zurmo",    "installdr":"/"},
   ];
   
   //数据库GUI工具
