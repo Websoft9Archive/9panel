@@ -203,7 +203,6 @@ var set_apps=["Example"];
     {"appname":"Pydio",    "apphelpurl":"pydio",    "installdr":"/"},
     {"appname":"Prestashop",    "apphelpurl":"prestashop",    "installdr":"/"},
     {"appname":"PHPWind",     "apphelpurl":"phpwind",     "installdr":"/"},
-    {"appname":"Ranzhi",    "apphelpurl":"ranzhi",    "installdr":"/"},
     {"appname":"ResourceSpace",    "apphelpurl":"resourcespace",    "installdr":"/"},
     {"appname":"SiteFactory",     "apphelpurl":"sitefactory",     "installdr":"/"},
     {"appname":"SiteServer",     "apphelpurl":"siteserver",     "installdr":"/"},
@@ -220,6 +219,7 @@ var set_apps=["Example"];
     {"appname":"WordPress",    "apphelpurl":"wordpress",    "installdr":":/"},
     {"appname":"Zentao",    "apphelpurl":"zentao",    "installdr":"/"},
     {"appname":"Xcart",     "apphelpurl":"xcart",     "installdr":"/"},
+    {"appname":"Zdoo",    "apphelpurl":"zdoo",    "installdr":"/"},
     {"appname":"Zurmo",    "apphelpurl":"zurmo",    "installdr":"/"},
   ];
   
