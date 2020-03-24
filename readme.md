@@ -1,7 +1,7 @@
 # 9Panel
 
 ![](images/icon/websoft9-imagepanel.png)
-> 9Panel是Websoft9公司镜像的开源组件之一，支持中英文显示，部分镜像内置了9Panel. 它是集合数据库管理、文档和支持服务的引导页面，是镜像快速入门的向导工具。基于Bootstrap+vue.js开发，几乎不会占用系统资源，也不会对系统文件进行任何修改。
+> 9Panel（[演示](https://websoft9.github.io/9panel/)）是Websoft9公司镜像的开源组件之一，支持中英文显示，部分镜像内置了9Panel. 它是集合数据库管理、文档和支持服务的引导页面，是镜像快速入门的向导工具。基于Bootstrap+vue.js开发，几乎不会占用系统资源，也不会对系统文件进行任何修改。
 
 ## 使用说明
 
