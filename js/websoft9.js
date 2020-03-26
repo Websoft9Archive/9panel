@@ -76,7 +76,7 @@ var set_apps=["Example"];
   },
   
   {
-    "name":"Java runtime (Linux)",
+    "name":"Java on Tomcat runtime (Linux)",
     "apps":"",
     "language":["Java"],
     "os":"Linux",
@@ -84,19 +84,19 @@ var set_apps=["Example"];
     "databasetool":["phpMyAdmin(Docker)"],
     "httpserver":["Nginx","Tomcat"],
     "tools":"",
-    "helpurl":"java-on-tomcat"
+    "helpurl":"java"
   },
   
   {
-    "name":"Java(Windows)",
+    "name":"Java on Tomcat (Windows)",
     "apps":"",
     "language":["Java"],
     "os":"Windows",
     "database":["MySQL","MariaDB"],
-    "databasetool":["jspMyAdmin"],
+    "databasetool":["dbForge"],
     "httpserver":["Nginx","Tomcat"],
     "tools":"",
-    "helpurl":"java-on-tomcat"
+    "helpurl":"java"
   },
   
   {
@@ -112,7 +112,7 @@ var set_apps=["Example"];
   },
 
   {
-    "name":"Node.js(Linux)",
+    "name":"Node.js runtime(Linux)",
     "apps":"",
     "language":["Node.js"],
     "os":"Linux",
