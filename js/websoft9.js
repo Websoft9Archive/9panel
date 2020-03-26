@@ -233,8 +233,6 @@ var set_apps=["Example"];
     {"appname":"Xcart",     "apphelpurl":"xcart",     "installdr":"/"},
     {"appname":"Zdoo",    "apphelpurl":"zdoo",    "installdr":"/"},
     {"appname":"Zurmo",    "apphelpurl":"zurmo",    "installdr":"/"},
-     
-    #node.js applications
     {"appname":"Express",    "apphelpurl":"nodejs",    "installdr":"/"}
   ];
   
@@ -316,7 +314,7 @@ var set_apps=["Example"];
     "tooltile":"MySQL数据库管理",
     "toolcontent":"本镜像内置数据库管理工具dbForge来管理Mysql数据库",
     "defaultaccount":"/password.txt",
-	  "toollink":"#",
+    "toollink":"#",
     "displayimage":"images/dbofrge.png"
   }
   
@@ -356,7 +354,7 @@ var set_apps=["Example"];
         "tooltitle":"Demo",
         "toolcontent_zh":"查看此环境下的Demos",
         "toolcontent_en":"View the demos for this runtime.",
-        "toollink":"tools/phpinfo.php",
+        "toollink":"/demo",
         "toollinkname":"进入工具"
     }
   ];
