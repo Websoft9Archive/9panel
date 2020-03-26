@@ -83,7 +83,7 @@ var set_apps=["Example"];
     "database":["MySQL","MariaDB"],
     "databasetool":["phpMyAdmin(Docker)"],
     "httpserver":["Nginx","Tomcat"],
-    "tools":"",
+    "tools":["demo"],
     "helpurl":"java"
   },
   
@@ -311,7 +311,7 @@ var set_apps=["Example"];
   },
 
   {
-	  "toolname":"dbForge",
+    "toolname":"dbForge",
     "db":"MySQL",
     "tooltile":"MySQL数据库管理",
     "toolcontent":"本镜像内置数据库管理工具dbForge来管理Mysql数据库",
@@ -348,6 +348,15 @@ var set_apps=["Example"];
         "toolcontent_zh":"Opcache面板用于查看Opcache Version、内存使用情况、Cache使用统计等信息，并可以对重置和刷新缓存",
         "toolcontent_en":"Opcache panel is used to view information such as Opcache Version, memory usage, Cache usage statistics, etc., and can reset and refresh the cache.",
         "toollink":"tools/ocp.php",
+        "toollinkname":"进入工具"
+    },
+	  
+    {
+        "name":"demo",
+        "tooltitle":"Demo",
+        "toolcontent_zh":"查看此环境下的Demos",
+        "toolcontent_en":"View the demos for this runtime.",
+        "toollink":"tools/phpinfo.php",
         "toollinkname":"进入工具"
     }
   ];
