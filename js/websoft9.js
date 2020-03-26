@@ -233,6 +233,9 @@ var set_apps=["Example"];
     {"appname":"Xcart",     "apphelpurl":"xcart",     "installdr":"/"},
     {"appname":"Zdoo",    "apphelpurl":"zdoo",    "installdr":"/"},
     {"appname":"Zurmo",    "apphelpurl":"zurmo",    "installdr":"/"},
+     
+    #node.js applications
+    {"appname":"Express",    "apphelpurl":"nodejs",    "installdr":"/"}
   ];
   
   //数据库GUI工具
