@@ -110,6 +110,18 @@ var set_apps=["Example"];
     "tools":["php-fork","php-info","php-opcache"],
     "helpurl":"wamp"
   },
+
+  {
+    "name":"Node.js(Linux)",
+    "apps":"",
+    "language":["Node.js"],
+    "os":"Linux",
+    "database":["MySQL","MongoDB"],
+    "databasetool":["phpMyAdmin(Docker)"],
+    "httpserver":["Nginx"],
+    "tools":"",
+    "helpurl":"nodejs"
+  },
   
   {
     "name":"WAMPServer",
