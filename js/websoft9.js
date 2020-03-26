@@ -76,7 +76,7 @@ var set_apps=["Example"];
   },
   
   {
-    "name":"Java(Linux)",
+    "name":"Java runtime (Linux)",
     "apps":"",
     "language":["Java"],
     "os":"Linux",
