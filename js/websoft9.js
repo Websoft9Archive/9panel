@@ -37,7 +37,18 @@ var set_apps=["Example"];
     "tools":["php-fork","php-info","php-opcache"],
     "helpurl":"lnmp"
   },
-  
+	  
+  {
+    "name":"PHP&Java",
+    "apps":"",
+    "language":["PHP","JAVA"],
+    "os":"Linux",
+    "database":["MySQL"],
+    "databasetool":["phpMyAdmin"],
+    "httpserver":["Nginx"],
+    "tools":["php-fork","php-info","php-opcache"],
+    "helpurl":"lnmp"
+  },
   
   {
     "name":"LCMP",
