@@ -39,7 +39,7 @@ var set_apps=["Example"];
   },
 	  
   {
-    "name":"PHP&Java",
+    "name":"PHP&JAVA",
     "apps":"",
     "language":["PHP","JAVA"],
     "os":"Linux",
