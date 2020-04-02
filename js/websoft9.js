@@ -215,6 +215,7 @@ var set_apps=["Example"];
     {"appname":"Codiad",     "apphelpurl":"codiad",     "installdr":"/"},
     {"appname":"DzzOffice","apphelpurl":"dzzoffice","installdr":"/"},
     {"appname":"Discuz",    "apphelpurl":"discuz",    "installdr":"/"},
+    {"appname":"Django",    "apphelpurl":"python",    "installdr":"/"},
     {"appname":"Dolibarr",    "apphelpurl":"dolibarr",    "installdr":"/"},
     {"appname":"Drupal",    "apphelpurl":"drupal",    "installdr":"/"},
     {"appname":"DreamFactory",    "apphelpurl":"dreamfactory",    "installdr":"/"},
