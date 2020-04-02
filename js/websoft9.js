@@ -85,6 +85,18 @@ var set_apps=["Example"];
     "tools":["php-fork","php-info","php-opcache"],
     "helpurl":"lanmp"
   },
+
+  {
+    "name":"Python runtime",
+    "apps":"",
+    "language":["Python"],
+    "os":"Linux",
+    "database":["MySQL"],
+    "databasetool":["phpMyAdmin(Docker)"],
+    "httpserver":["Nginx","Uwsgi"],
+    "tools":"",
+    "helpurl":"python"
+  },
   
   {
     "name":"Java on Tomcat runtime (Linux)",
