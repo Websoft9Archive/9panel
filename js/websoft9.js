@@ -20,7 +20,7 @@ var set_apps=["Example"];
     "language":["PHP"],
     "os":"Linux",
     "database":["MySQL"],
-    "databasetool":["phpMyAdmin"],
+    "databasetool":["phpMyAdmin(Docker)"],
     "httpserver":["Apache"],
     "tools":["php-fork","php-info","php-opcache"],
     "helpurl":"lamp"
@@ -32,7 +32,7 @@ var set_apps=["Example"];
     "language":["PHP"],
     "os":"Linux",
     "database":["MySQL"],
-    "databasetool":["phpMyAdmin"],
+    "databasetool":["phpMyAdmin(Docker)"],
     "httpserver":["Nginx"],
     "tools":["php-fork","php-info","php-opcache"],
     "helpurl":"lnmp"
@@ -44,7 +44,7 @@ var set_apps=["Example"];
     "language":["PHP","JAVA"],
     "os":"Linux",
     "database":["MySQL"],
-    "databasetool":["phpMyAdmin"],
+    "databasetool":["phpMyAdmin(Docker)"],
     "httpserver":["Nginx"],
     "tools":["php-fork","php-info","php-opcache"],
     "helpurl":"lnmp"
@@ -56,7 +56,7 @@ var set_apps=["Example"];
     "language":["PHP"],
     "os":"Linux",
     "database":["MySQL"],
-    "databasetool":["phpMyAdmin"],
+    "databasetool":["phpMyAdmin(Docker)"],
     "httpserver":["Caddy"],
     "tools":["php-fork","php-info","php-opcache"],
     "helpurl":"lcmp"
@@ -68,7 +68,7 @@ var set_apps=["Example"];
     "language":["PHP","Java"],
     "os":"Linux",
     "database":["MySQL"],
-    "databasetool":["phpMyAdmin"],
+    "databasetool":["phpMyAdmin(Docker)"],
     "httpserver":["Nginx","Tomcat"],
     "tools":["php-fork","php-info","php-opcache"],
     "helpurl":"lnmt"
@@ -80,7 +80,7 @@ var set_apps=["Example"];
     "language":["PHP"],
     "os":"Linux",
     "database":["MySQL","MariaDB"],
-    "databasetool":["phpMyAdmin"],
+    "databasetool":["phpMyAdmin(Docker)"],
     "httpserver":["Nginx","Apache"],
     "tools":["php-fork","php-info","php-opcache"],
     "helpurl":"lanmp"
