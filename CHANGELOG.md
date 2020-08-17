@@ -2,8 +2,7 @@
 
 ## To do
 
-1. 可视化管理工具
-2. AmazonLinux支持
+1. 去掉小工具
 
 ## Logs
 
