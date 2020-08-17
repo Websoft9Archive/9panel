@@ -421,7 +421,7 @@ const messages = {
       index_qa42: '如果没有可用域名，可用IP的方式安装网站。但有些软件（例如：WordPress）会将安装路径记录到数据库，将来改成域名访问需要做出修改方可使用',
 
       install_apps_step1_title:'第一步：验证数据库可用性',
-      install_apps_step1_content: '访问<a href="db.html">数据库管理</a>页面，获取数据库密码，登录数据库验证可用性',
+      install_apps_step1_content: '先到【云控制台】>【安全组】开启 <b>9090<b> 端口，打开<a href="db.html">数据库管理</a>页面，获取数据库密码，登录数据库验证可用性',
       install_apps_step2_title:'第二步：域名解析（可选）',
       install_apps_step3_title:'第三步：进入安装向导',
 
