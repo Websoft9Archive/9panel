@@ -420,14 +420,14 @@ const messages = {
       index_qa41: '没有域名可以安装网站吗？',
       index_qa42: '如果没有可用域名，可用IP的方式安装网站。但有些软件（例如：WordPress）会将安装路径记录到数据库，将来改成域名访问需要做出修改方可使用',
 
-      install_apps_step1_title:'第一步：验证数据库可用性',
-      install_apps_step1_content: '先到【云控制台】>【安全组】开启 <b>9090<b> 端口，打开<a href="db.html">数据库管理</a>页面，获取数据库密码，登录数据库验证可用性',
+      install_apps_step1_title:'第一步：验证并管理数据库',
+      install_apps_step1_content: '先到【云控制台】>【安全组】开启 <b>9090</b> 端口，再点击此处的<a href="db.html">数据库管理</a>链接，获取数据库密码，登录数据库验证可用性',
       install_apps_step2_title:'第二步：域名解析（可选）',
       install_apps_step3_title:'第三步：进入安装向导',
 
       ftp_content_linux: '本地电脑安装可视化服务器管理工具<a href="https://winscp.net/eng/docs/lang:chs">WinSCP</a>，以SFTP模式连接Linux服务器，就可以获取数据库密码，上传、下载或修改文件、运行Linux命令等',
       ftp_content_windows: '使用本地电脑自带的远程桌面工具，登录到Windows服务器后，与本地之间通过 [拷贝-粘贴] 的方式即可上传文件。如果需要使用FTP工具，需要自行配置',
-      ftp_forgetpw: '若忘记了服务器的密码，登录云控制台->服务器-重置密码，重启服务器生效',
+      ftp_forgetpw: '若忘记了服务器的密码，登录【云控制台】>【服务器】>【重置密码】，重启服务器生效',
       ftp_button_linux: '下载WinSCP',
       ftp_liux_remind: '如果使用macOS，请下载filezilla',
       ftp_button_windows:'深入了解远程桌面',
@@ -476,7 +476,7 @@ const messages = {
       getdbpw_content:'访问<a href="db.html">数据库管理</a>页面，获取数据库密码，登录数据库验证可用性',
 
       bddomain_title:'第二步：域名绑定（可选）',
-      bddomain_content:'若计划使用域名，请务必先解析域名，然后【http://域名/9panel】进入本页面，再继续下一步',
+      bddomain_content:'若计划使用域名，请务必先解析域名，然后重新开启浏览器窗口，访问【http://域名/9panel】进入本页面，再继续下一步',
 
       checkversion_title:'第二步：安装评估',
       checkversion_content:'请根据待安装的网站（或应用程序）对环境版本（操作系统/数据库/语言/应用服务器）的要求进行评估',
