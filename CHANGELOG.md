@@ -13,7 +13,8 @@
 
 ### Features
 
-* 2020-02-14  change LAMP's phpMyAdmin to phpMyAdmin(Docker)
+* 2020-08-17  add port:9090 reminder for step1
+* 2020-08-17  change LAMP's phpMyAdmin to phpMyAdmin(Docker)
 * 2020-03-02  引入了vue.js，实现了中文和英文语言，自动匹配浏览器显示，暂时无法判断Cookie
 * 2020-03-02  修改了logo,安装向导等图片
 * 2020-03-02  优化了代码，减少了循环的使用
