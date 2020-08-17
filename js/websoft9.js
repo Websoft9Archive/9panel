@@ -472,8 +472,8 @@ const messages = {
     },
 
     stepmessage: {
-      getdbpw_title:'第一步：获取数据库密码',
-      getdbpw_content:'访问<a href="db.html">数据库管理</a>页面，获取数据库密码，登录数据库验证可用性',
+      getdbpw_title:'第一步：验证并管理数据库',
+      getdbpw_content:'先到【云控制台】>【安全组】开启 <b>9090</b> 端口，再点击此处的<a href="db.html">数据库管理</a>链接，获取数据库密码，登录数据库验证可用性',
 
       bddomain_title:'第二步：域名绑定（可选）',
       bddomain_content:'若计划使用域名，请务必先解析域名，然后重新开启浏览器窗口，访问【http://域名/9panel】进入本页面，再继续下一步',
