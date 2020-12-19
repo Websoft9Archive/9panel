@@ -22,7 +22,7 @@ var set_apps=["Example"];
     "database":["MySQL"],
     "databasetool":["phpMyAdmin(Docker)"],
     "httpserver":["Apache"],
-    "tools":["php-fork","php-info","php-opcache"],
+    "tools":["winscp","cloud-installer","scanner"],
     "helpurl":"lamp"
   },
   
@@ -34,7 +34,7 @@ var set_apps=["Example"];
     "database":["MySQL"],
     "databasetool":["phpMyAdmin(Docker)"],
     "httpserver":["Nginx"],
-    "tools":["php-fork","php-info","php-opcache"],
+    "tools":["winscp","cloud-installer","scanner"],
     "helpurl":"lnmp"
   },
 	  
@@ -46,7 +46,7 @@ var set_apps=["Example"];
     "database":["MySQL"],
     "databasetool":["phpMyAdmin(Docker)"],
     "httpserver":["Nginx"],
-    "tools":["php-fork","php-info","php-opcache"],
+    "tools":["winscp","cloud-installer","scanner"],
     "helpurl":"lnmp"
   },
   
@@ -58,7 +58,7 @@ var set_apps=["Example"];
     "database":["MySQL"],
     "databasetool":["phpMyAdmin(Docker)"],
     "httpserver":["Caddy"],
-    "tools":["php-fork","php-info","php-opcache"],
+    "tools":["winscp","cloud-installer","scanner"],
     "helpurl":"lcmp"
   },
   
@@ -70,7 +70,7 @@ var set_apps=["Example"];
     "database":["MySQL"],
     "databasetool":["phpMyAdmin(Docker)"],
     "httpserver":["Nginx","Tomcat"],
-    "tools":["php-fork","php-info","php-opcache"],
+    "tools":["winscp","cloud-installer","scanner"],
     "helpurl":"lnmt"
   },
   
@@ -82,7 +82,7 @@ var set_apps=["Example"];
     "database":["MySQL","MariaDB"],
     "databasetool":["phpMyAdmin(Docker)"],
     "httpserver":["Nginx","Apache"],
-    "tools":["php-fork","php-info","php-opcache"],
+    "tools":["winscp","cloud-installer","scanner"],
     "helpurl":"lanmp"
   },
 
@@ -130,7 +130,7 @@ var set_apps=["Example"];
     "database":["MySQL"],
     "databasetool":["phpMyAdmin","dbForge"],
     "httpserver":["Apache"],
-    "tools":["php-fork","php-info","php-opcache"],
+    "tools":["winscp","cloud-installer","scanner"],
     "helpurl":"wamp"
   },
 
@@ -154,7 +154,7 @@ var set_apps=["Example"];
     "database":["MySQL"],
     "databasetool":["phpMyAdmin","dbForge"],
     "httpserver":["Apache"],
-    "tools":["php-fork","php-info","php-opcache"],
+    "tools":["winscp","cloud-installer","scanner"],
     "helpurl":"wampserver"
   },
   
@@ -166,7 +166,7 @@ var set_apps=["Example"];
     "database":["MySQL"],
     "databasetool":["phpMyAdmin"],
     "httpserver":["Apache","Tomcat"],
-    "tools":["php-fork","php-info","php-opcache"],
+    "tools":["winscp","cloud-installer","scanner"],
     "helpurl":"xampp"
   },
   
@@ -178,7 +178,7 @@ var set_apps=["Example"];
     "database":["MySQL","SQLServer Express"],
     "databasetool":["phpMyAdmin","SQL Server Managerment Studio"],
     "httpserver":["IIS","Tomcat"],
-    "tools":["php-fork","php-info","php-opcache"],
+    "tools":["winscp","cloud-installer","scanner"],
     "helpurl":"iis"
   },
   
@@ -347,29 +347,29 @@ var set_apps=["Example"];
   //其他工具
   var othertools=[
     {
-        "name":"php-fork",
-        "tooltitle":"Yahei Explore",
-        "toolcontent_zh":"雅黑PHP探针,可以实时查看服务器硬盘资源、内存占用、网卡流量、系统负载、服务器时间等信息",
-        "toolcontent_en":"Yahei PHP Explore, you can view server hard disk resources, memory usage, network card traffic, system load, server time and other information in real time.",
-        "toollink":"tools/tz.php",
-        "toollinkname":"进入工具"
+        "name":"winscp",
+        "tooltitle":"WinSCP",
+        "toolcontent_zh":"WinSCP 是一个 Windows 环境下使用的 SSH 的开源图形化 SFTP 客户端，用于可视化管理 Linux 系统。",
+        "toolcontent_en":"WinSCP is a popular SFTP client and FTP client for Microsoft Windows! Copy file between a local computer and remote servers using FTP, FTPS, SCP, SFTP, server time and other information in real time.",
+        "toollink":"https://winscp.net/",
+        "toollinkname":"下载工具"
     },
-   
+
     {
-        "name":"php-info",
-        "tooltitle":"phpinfo()",
-        "toolcontent_zh":"查看Apache,PHP完整的配置信息，输出PHP编译选项、PHP版本、扩展组件信息、HTTP 头和PHP授权信息等",
-        "toolcontent_en":"View Apache, PHP complete configuration information, output PHP compilation options, PHP version, extension component information, HTTP headers and PHP authorization.",
-        "toollink":"tools/phpinfo.php",
-        "toollinkname":"进入工具"
+      "name":"scanner",
+      "tooltitle":"Security Scanner",
+      "toolcontent_zh":"免费的在线网站漏洞和木马检测工具。",
+      "toolcontent_en":"Free website security check & malware scanner",
+      "toollink":"https://sitecheck.sucuri.net/",
+      "toollinkname":"进入工具"
     },
   
     {
-        "name":"php-opcache",
-        "tooltitle":"Opcache",
-        "toolcontent_zh":"Opcache面板用于查看Opcache Version、内存使用情况、Cache使用统计等信息，并可以对重置和刷新缓存",
-        "toolcontent_en":"Opcache panel is used to view information such as Opcache Version, memory usage, Cache usage statistics, etc., and can reset and refresh the cache.",
-        "toollink":"tools/ocp.php",
+        "name":"cloud-installer",
+        "tooltitle":"Cloud Installer",
+        "toolcontent_zh":"Cloud Installer 是一个用于自动化部署软件的开源项目，目前提供100+个常见的开源场景化应用，让云服务器上部署环境和应用软件变得非常简单。",
+        "toolcontent_en":"Cloud Installer is a opensource project for software deployment, it help you install software very easy on your Cloud Server.",
+        "toollink":"https://github.com/websoft9",
         "toollinkname":"进入工具"
     },
 	  
