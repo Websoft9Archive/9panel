@@ -349,8 +349,8 @@ var set_apps=["Example"];
     {
         "name":"winscp",
         "tooltitle":"WinSCP",
-        "toolcontent_zh":"WinSCP 是一个 Windows 环境下使用的 SSH 的开源图形化 SFTP 客户端，用于可视化管理 Linux 系统。",
-        "toolcontent_en":"WinSCP is a popular SFTP client and FTP client for Microsoft Windows! Copy file between a local computer and remote servers using FTP, FTPS, SCP, SFTP, server time and other information in real time.",
+        "toolcontent_zh":"这是一个 Windows 环境下使用的 SSH 的开源图形化 SFTP 客户端，用于可视化管理 Linux 系统。",
+        "toolcontent_en":"This is a popular SFTP client and FTP client for Microsoft Windows",
         "toollink":"https://winscp.net/",
         "toollinkname":"下载工具"
     },
@@ -358,7 +358,7 @@ var set_apps=["Example"];
     {
       "name":"scanner",
       "tooltitle":"Security Scanner",
-      "toolcontent_zh":"免费的在线网站漏洞和木马检测工具。",
+      "toolcontent_zh":"这是一个免费的在线网站漏洞和木马检测工具，输入网站域名即可快速扫描网站的安全隐患，提升网站安全。",
       "toolcontent_en":"Free website security check & malware scanner",
       "toollink":"https://sitecheck.sucuri.net/",
       "toollinkname":"进入工具"
@@ -367,7 +367,7 @@ var set_apps=["Example"];
     {
         "name":"cloud-installer",
         "tooltitle":"Cloud Installer",
-        "toolcontent_zh":"Cloud Installer 是一个用于自动化部署软件的开源项目，目前提供100+个常见的开源场景化应用，让云服务器上部署环境和应用软件变得非常简单。",
+        "toolcontent_zh":"这是一个用于自动化部署软件的开源项目，让用户在云服务器上部署、配置、集成开源软件变得非常简单。",
         "toolcontent_en":"Cloud Installer is a opensource project for software deployment, it help you install software very easy on your Cloud Server.",
         "toollink":"https://github.com/websoft9",
         "toollinkname":"进入工具"
@@ -448,7 +448,7 @@ const messages = {
       db_getdbpw_content2: '文件中，<a href="ftp.html" target="_blank">连接到您的云服务器</a>，即可获取',
       db_getdbpw_note: '注意：数据库密码是初装镜像之时，随机生成的高安全密码，请妥善保管',
 
-      tools_loginbutton:'登录{tooltitle}',
+      tools_loginbutton:'访问{tooltitle}',
 
       solution_selection1: '方式一：使用SFTP',
       solution_selection2: '方式二：使用命令',
@@ -546,7 +546,7 @@ const messages = {
       db_getdbpw_content2:'file, <a href="ftp.html" target="_blank">connect to your cloud server</a>, you can get it ',
       db_getdbpw_note: 'Note: The database password is a randomly generated high security password when the image is first installed. Please keep it safe.',
 
-      tools_loginbutton:'Login {tooltitle}',
+      tools_loginbutton:'Access {tooltitle}',
 
       solution_selection1: 'Method 1: Using SFTP',
       solution_selection2: 'Method 2: Using Command',
