@@ -7,7 +7,7 @@
 
 //*****************************备注******************************************* */
 
-var set_infrastructure="Java on Tomcat runtime (Linux)";
+var set_infrastructure="LAMP";
 var set_apps=["Example"];
 
 
@@ -668,7 +668,6 @@ locale: NavigatorLang, // set locale zh or en
 messages, // set locale messages
 })
 
-
 //首页欢迎区的镜像组件说明
 Vue.component('displayindexcomponents',{
   template:`
@@ -697,24 +696,6 @@ Vue.component('displayindexcomponents',{
     },
   
   },
-})
-
-// 单独语言选择组件
-Vue.component('selectLanguage', {
-  template: `
-	<div class="content">
-	<i class="fa fa-globe" aria-hidden="true"></i>          
-	<a class="js-acc-btn" href="#" v-on:click="HeaderHandler_selectLanguage('en')">English</a> | <a class="js-acc-btn" href="#" v-on:click="HeaderHandler_selectLanguage('zh')">中文</a>
-	</div>
-`,
-methods: {
-  HeaderHandler_selectLanguage: function (str) {
-    
-    Global_languagetype=str;
-    this.$i18n.locale = str;
-    
-  },
-},
 })
 
 //9Panle的头部header组件(组件名称不能大写)
@@ -860,7 +841,6 @@ Vue.component('panelleftmenu', {
 Vue.component('installappssteps',{
   template: `
   <div class="row">
-
    <div class="col-lg-4" id="step1"> 
     <div class="au-card recent-report"> 
      <div class="au-card-inner"> 
@@ -875,7 +855,6 @@ Vue.component('installappssteps',{
      </div> 
     </div> 
    </div>
-
    <div class="col-lg-4" id="step2"> 
    <div class="au-card recent-report"> 
     <div class="au-card-inner"> 
@@ -890,7 +869,6 @@ Vue.component('installappssteps',{
     </div> 
    </div> 
   </div>
-
   <div class="col-lg-4" id="step2"> 
   <div class="au-card recent-report"> 
    <div class="au-card-inner"> 
@@ -907,11 +885,8 @@ Vue.component('installappssteps',{
    </div> 
   </div> 
  </div>
-
  
-
    </div>
-
    
     `,
 
@@ -924,7 +899,6 @@ Vue.component('installappssteps',{
 Vue.component('installsteps',{
   template: `
   <div class="row">
-
    <div class="col-lg-4" id="step1"> 
     <div class="au-card recent-report"> 
      <div class="au-card-inner"> 
@@ -939,7 +913,6 @@ Vue.component('installsteps',{
      </div> 
     </div> 
    </div>
-
    <div class="col-lg-4" id="step2"> 
    <div class="au-card recent-report"> 
     <div class="au-card-inner"> 
@@ -954,7 +927,6 @@ Vue.component('installsteps',{
     </div> 
    </div> 
   </div>
-
   <div class="col-lg-4" id="step2"> 
   <div class="au-card recent-report"> 
    <div class="au-card-inner"> 
@@ -969,11 +941,8 @@ Vue.component('installsteps',{
    </div> 
   </div> 
  </div>
-
  
-
    </div>
-
    
     `,
 
@@ -1060,7 +1029,6 @@ Vue.component('databasegui',{
      </div>
      
     </div> 
-
    </div> 
   </div> 
  </div>
@@ -1272,5 +1240,4 @@ function HeaderHandler_selectLanguage(str){
     this.Global_languagetype=str;
     this.i18n.locale = str;
 }
-
 //*****************基本通用函数 End****************************** */
