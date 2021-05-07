@@ -42,7 +42,11 @@
      <div class="header3-wrap"> 
       <div> 
             <h2 class="text-light">{{ $t("exmaple.exm_salong") }}</h2>
-      </div> 
+      </div>
+     <div class="content">
+         <i class="fa fa-globe" aria-hidden="true"></i>          
+         <a class="js-acc-btn" href="#" v-on:click="HeaderHandler_selectLanguage('en')">English</a> | <a class="js-acc-btn" href="#" v-on:click="HeaderHandler_selectLanguage('zh')">中文</a>
+     </div>
      </div> 
     </div> 
    </header> 
