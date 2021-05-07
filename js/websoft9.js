@@ -7,7 +7,7 @@
 
 //*****************************备注******************************************* */
 
-var set_infrastructure="LAMP";
+var set_infrastructure="Java on Tomcat runtime (Linux)";
 var set_apps=["Example"];
 
 
@@ -663,10 +663,11 @@ else
 
 
 // Create VueI18n instance with options
-const i18n = new VueI18n({
+var i18n = new VueI18n({
 locale: NavigatorLang, // set locale zh or en
 messages, // set locale messages
 })
+
 
 //首页欢迎区的镜像组件说明
 Vue.component('displayindexcomponents',{
@@ -696,6 +697,24 @@ Vue.component('displayindexcomponents',{
     },
   
   },
+})
+
+// 单独语言选择组件
+Vue.component('selectLanguage', {
+  template: `
+	<div class="content">
+	<i class="fa fa-globe" aria-hidden="true"></i>          
+	<a class="js-acc-btn" href="#" v-on:click="HeaderHandler_selectLanguage('en')">English</a> | <a class="js-acc-btn" href="#" v-on:click="HeaderHandler_selectLanguage('zh')">中文</a>
+	</div>
+`,
+methods: {
+  HeaderHandler_selectLanguage: function (str) {
+    
+    Global_languagetype=str;
+    this.$i18n.locale = str;
+    
+  },
+},
 })
 
 //9Panle的头部header组件(组件名称不能大写)
@@ -1247,6 +1266,11 @@ function boolean_ostype(){
     return false;
   }
 
+}
+
+function HeaderHandler_selectLanguage(str){
+    this.Global_languagetype=str;
+    this.i18n.locale = str;
 }
 
 //*****************基本通用函数 End****************************** */
