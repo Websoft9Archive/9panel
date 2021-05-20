@@ -140,7 +140,7 @@ var set_apps=["Example"];
     "language":["Node.js"],
     "os":"Linux",
     "database":["MySQL","MongoDB"],
-    "databasetool":["phpMyAdmin(Docker)"],
+    "databasetool":["phpMyAdmin(Docker)","AdminMongo(Docker)"],
     "httpserver":["Nginx"],
     "tools":"",
     "helpurl":"nodejs"
