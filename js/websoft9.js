@@ -328,7 +328,7 @@ var set_apps=["Example"];
     "tooltile":"MongoDB数据库管理",
     "toolcontent":"本镜像内置数据库Web管理面板AdminMongo(Docker)来管理PostgreSQL数据库",
     "defaultaccount":"/password.txt",
-    "toollink":":9090",
+    "toollink":":9091",
     "displayimage":"images/adminmogo.png"
   },
 
