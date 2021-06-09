@@ -145,6 +145,18 @@ var set_apps=["Example"];
     "tools":"",
     "helpurl":"nodejs"
   },
+	  
+  {
+    "name":"Ruby Runtime",
+    "apps":"",
+    "language":["Ruby"],
+    "os":"Linux",
+    "database":["MySQL"],
+    "databasetool":["phpMyAdmin(Docker)"],
+    "httpserver":["Apache"],
+    "tools":"",
+    "helpurl":"ruby"
+  },
   
   {
     "name":"WAMPServer",
