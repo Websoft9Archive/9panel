@@ -269,6 +269,7 @@ var set_apps=["Example"];
     {"appname":"Xcart",     "apphelpurl":"xcart",     "installdr":"/"},
     {"appname":"Zdoo",    "apphelpurl":"zdoo",    "installdr":"/"},
     {"appname":"Zurmo",    "apphelpurl":"zurmo",    "installdr":"/"},
+    {"appname":"rails",    "apphelpurl":"ruby",    "installdr":"/"},
     {"appname":"Express",    "apphelpurl":"nodejs",    "installdr":"/"}
   ];
   
