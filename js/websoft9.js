@@ -153,7 +153,7 @@ var set_apps=["Example"];
     "os":"Linux",
     "database":["MySQL"],
     "databasetool":["phpMyAdmin(Docker)"],
-    "httpserver":["Apache"],
+    "httpserver":["Nginx"],
     "tools":"",
     "helpurl":"ruby"
   },
