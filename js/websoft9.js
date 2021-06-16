@@ -149,10 +149,10 @@ var set_apps=["Example"];
   {
     "name":"Ruby Runtime",
     "apps":"",
-    "language":["Ruby"],
+    "language":["Ruby","Node.js"],
     "os":"Linux",
-    "database":["MySQL"],
-    "databasetool":["phpMyAdmin(Docker)"],
+    "database":["MySQL","MongoDB"],
+    "databasetool":["phpMyAdmin(Docker)","AdminMongo(Docker)"],
     "httpserver":["Nginx"],
     "tools":"",
     "helpurl":"ruby"
